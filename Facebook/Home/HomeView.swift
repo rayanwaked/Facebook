@@ -13,10 +13,14 @@ struct HomeView: View {
     
     var body: some View {
         VStack(spacing: 0) {
+            Logo()
+                .padding(.top, borderPadding/2)
+            
             ScrollView {
                 //MARK: Header
                 HeaderView()
                 .safeAreaPadding([.leading, .trailing], borderPadding)
+                .padding(.top, borderPadding)
                 
                 Divider()
                     .padding([.top, .bottom], 10)

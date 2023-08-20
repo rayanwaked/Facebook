@@ -7,11 +7,6 @@
 
 import SwiftUI
 
-struct ReactionPillModel {
-    var imageName: String
-    var label: String
-}
-
 struct ReactionPillView: View {
     var model: ReactionPillModel
     var reactionPillTappedAction: (() -> Void)?
@@ -36,6 +31,6 @@ struct ReactionPillView: View {
     }
 }
 
-#Preview {
+#Preview("Reaction Pill") {
     ReactionPillView(model: ReactionPillModel(imageName: "Like", label: "123"))
 }
