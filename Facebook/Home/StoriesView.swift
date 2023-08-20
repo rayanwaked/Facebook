@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StoriesView: View {
     var body: some View {
-        ScrollView(.horizontal) {
+        ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 VStack {
                     ProfileButtonView(model: ProfileButtonModel(width: 60, height: 60))

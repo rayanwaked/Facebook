@@ -30,6 +30,7 @@
 		B9ACB48D2A91B37F0040ED4A /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ACB48C2A91B37F0040ED4A /* TabBarModel.swift */; };
 		B9ACB4922A91C30D0040ED4A /* TextButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ACB4912A91C30D0040ED4A /* TextButtonModel.swift */; };
 		B9ACB4952A91C31C0040ED4A /* TextButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ACB4942A91C31C0040ED4A /* TextButtonView.swift */; };
+		B9C3AE9D2A92B3200002A823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9C3AE9C2A92B3200002A823 /* LaunchScreen.storyboard */; };
 		B9D3C1C32A91A30100680596 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D3C1C22A91A30100680596 /* StoriesView.swift */; };
 		B9D3C1C62A91A35A00680596 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D3C1C52A91A35A00680596 /* TabsView.swift */; };
 		B9D3C1C92A91A37A00680596 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D3C1C82A91A37A00680596 /* HeaderView.swift */; };
@@ -62,6 +63,8 @@
 		B9ACB48C2A91B37F0040ED4A /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
 		B9ACB4912A91C30D0040ED4A /* TextButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonModel.swift; sourceTree = "<group>"; };
 		B9ACB4942A91C31C0040ED4A /* TextButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonView.swift; sourceTree = "<group>"; };
+		B9C3AE9C2A92B3200002A823 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9C714D72A92AF9F0066078F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B9D3C1C22A91A30100680596 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
 		B9D3C1C52A91A35A00680596 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		B9D3C1C82A91A37A00680596 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -109,7 +112,9 @@
 		B95ED2B02A8FE552002A6DE4 /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
+				B9C714D72A92AF9F0066078F /* Info.plist */,
 				B95ED2B72A8FE554002A6DE4 /* Assets.xcassets */,
+				B9C3AE9C2A92B3200002A823 /* LaunchScreen.storyboard */,
 				B95ED2B12A8FE552002A6DE4 /* FacebookApp.swift */,
 				B95ED2E82A901BC0002A6DE4 /* Components */,
 				B95ED2C82A8FE963002A6DE4 /* Onboard */,
@@ -334,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B95ED2B82A8FE554002A6DE4 /* Assets.xcassets in Resources */,
+				B9C3AE9D2A92B3200002A823 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,13 +513,15 @@
 				DEVELOPMENT_TEAM = 6R2E9P9EPV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Facebook/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Facebook;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -539,13 +547,15 @@
 				DEVELOPMENT_TEAM = 6R2E9P9EPV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Facebook/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Facebook;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -56,10 +56,16 @@ struct PostsView: View {
             }
             
             HStack {
-                ProfileButtonView(model: ProfileButtonModel(width: 26, height: 26))
-                ProfileButtonView(model: ProfileButtonModel(width: 26, height: 26))
+                Circle()
+                    .frame(height: 26)
+                    .foregroundStyle(.ultraThickMaterial)
+                Circle()
+                    .frame(height: 26)
+                    .foregroundStyle(.ultraThickMaterial)
                     .padding(.leading, -15)
-                ProfileButtonView(model: ProfileButtonModel(width: 26, height: 26))
+                Circle()
+                    .frame(height: 26)
+                    .foregroundStyle(.ultraThickMaterial)
                     .padding(.leading, -15)
                 
                 Spacer()
