@@ -13,7 +13,7 @@ struct TabsView: View {
     var body: some View {
         HStack(alignment: .bottom, spacing: 20) {
             TextButtonView(model: TextButtonModel(
-                text: "Feed",
+                text: "Posts",
                 fontSize: tabsModel.currentTab == 0 ? Font.title2 : Font.title3,
                 fontWeight: tabsModel.currentTab == 0 ? .bold : .semibold,
                 fontColor: tabsModel.currentTab == 0 ? Color.blue : Color.black)) {
@@ -29,7 +29,7 @@ struct TabsView: View {
             }
             
             TextButtonView(model: TextButtonModel(
-                text: "Watch",
+                text: "Videos",
                 fontSize: tabsModel.currentTab == 2 ? Font.title2 : Font.title3,
                 fontWeight: tabsModel.currentTab == 2 ? .bold : .semibold,
                 fontColor: tabsModel.currentTab == 2 ? Color.blue : Color.black)) {
