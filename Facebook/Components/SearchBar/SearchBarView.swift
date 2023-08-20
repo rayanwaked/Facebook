@@ -18,7 +18,7 @@ struct SearchBarView: View {
             
             Text("What's on your mind?")
                 .foregroundStyle(.gray.opacity(0.7))
-                .fontWeight(.medium)
+                .font(Font.system(size: 16).weight(.medium))
                 .padding()
             
             //TODO: On tap, provide menu to search, create text post, create reel, create video, etc...

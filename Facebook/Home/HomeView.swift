@@ -13,13 +13,14 @@ struct HomeView: View {
     
     var body: some View {
         VStack(spacing: 0) {
+            //TODO: Hide on scroll
             Logo()
                 .padding(.top, borderPadding/2)
             
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 //MARK: Header
                 HeaderView()
-                .safeAreaPadding([.leading, .trailing], borderPadding)
+                .padding([.leading, .trailing], borderPadding)
                 .padding(.top, borderPadding)
                 
                 Divider()
@@ -27,21 +28,19 @@ struct HomeView: View {
                 
                 //MARK: Tabs
                 StoriesView()
-                    .safeAreaPadding(.leading, borderPadding)
 
                 Divider()
                     .padding([.top, .bottom], 10)
                 
                 //MARK: Stories
                 TabsView()
-                    .safeAreaPadding([.leading, .trailing], borderPadding)
+                    .padding([.leading, .trailing], borderPadding)
                     .padding(.bottom, 10)
                 
                 //MARK: Posts
                 PostsView()
-                .safeAreaPadding(borderPadding)
+                .padding(borderPadding)
             }
-            .scrollIndicators(.hidden)
             
             //MARK: Tab Bar
             TabBarView()

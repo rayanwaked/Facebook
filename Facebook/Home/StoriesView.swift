@@ -15,8 +15,7 @@ struct StoriesView: View {
                     ProfileButtonView(model: ProfileButtonModel(width: 60, height: 60))
                     Text("You")
                         .foregroundStyle(.gray)
-                        .font(.system(size: 14))
-                        .fontWeight(.medium)
+                        .font(Font.system(size: 14).weight(.medium))
                 }
                 
                 VStack {
@@ -25,8 +24,7 @@ struct StoriesView: View {
                         .foregroundStyle(.ultraThickMaterial)
                     Text("First")
                         .foregroundStyle(.gray)
-                        .font(.system(size: 14))
-                        .fontWeight(.medium)
+                        .font(Font.system(size: 14).weight(.medium))
                 }
                 
                 VStack {
@@ -35,8 +33,7 @@ struct StoriesView: View {
                         .foregroundStyle(.ultraThickMaterial)
                     Text("First")
                         .foregroundStyle(.gray)
-                        .font(.system(size: 14))
-                        .fontWeight(.medium)
+                        .font(Font.system(size: 14).weight(.medium))
                 }
                 
                 VStack {
@@ -45,8 +42,7 @@ struct StoriesView: View {
                         .foregroundStyle(.ultraThickMaterial)
                     Text("First")
                         .foregroundStyle(.gray)
-                        .font(.system(size: 14))
-                        .fontWeight(.medium)
+                        .font(Font.system(size: 14).weight(.medium))
                 }
                 
                 VStack {
@@ -55,8 +51,7 @@ struct StoriesView: View {
                         .foregroundStyle(.ultraThickMaterial)
                     Text("First")
                         .foregroundStyle(.gray)
-                        .font(.system(size: 14))
-                        .fontWeight(.medium)
+                        .font(Font.system(size: 14).weight(.medium))
                 }
                 
                 VStack {
@@ -65,8 +60,7 @@ struct StoriesView: View {
                         .foregroundStyle(.ultraThickMaterial)
                     Text("First")
                         .foregroundStyle(.gray)
-                        .font(.system(size: 14))
-                        .fontWeight(.medium)
+                        .font(Font.system(size: 14).weight(.medium))
                 }
                 
                 VStack {
@@ -75,11 +69,10 @@ struct StoriesView: View {
                         .foregroundStyle(.ultraThickMaterial)
                     Text("First")
                         .foregroundStyle(.gray)
-                        .font(.system(size: 14))
-                        .fontWeight(.medium)
+                        .font(Font.system(size: 14).weight(.medium))
                 }
             }
-            .padding(.trailing, 18)
+            .padding([.leading, .trailing], 18)
         }
 
     }

@@ -40,7 +40,7 @@ struct TabBarView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: 50)
-        .safeAreaPadding([.leading, .trailing], 35)
+        .padding([.leading, .trailing], 35)
         .background(.ultraThinMaterial)
     }
 }

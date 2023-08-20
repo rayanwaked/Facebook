@@ -26,4 +26,3 @@ struct IconButtonView: View {
         print("Test")
     }
 }
-
