@@ -5,14 +5,9 @@
 //  Created by Rayan Waked on 8/20/23.
 //
 
-import SwiftUI
+import Foundation
 
-struct TabsModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+class TabsModel: ObservableObject {
+    @Published var currentTab = 0
 }
 
-#Preview {
-    TabsModel()
-}

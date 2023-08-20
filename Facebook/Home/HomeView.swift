@@ -9,6 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct HomeView: View {
+    @StateObject var tabsModel = TabsModel()
     let borderPadding = CGFloat(18)
     
     var body: some View {
@@ -36,6 +37,7 @@ struct HomeView: View {
                 TabsView()
                     .padding([.leading, .trailing], borderPadding)
                     .padding(.bottom, 10)
+                    .environmentObject(tabsModel)
                 
                 //MARK: Posts
                 PostsView()

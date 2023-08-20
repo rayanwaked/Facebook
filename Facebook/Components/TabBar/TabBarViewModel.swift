@@ -7,6 +7,6 @@
 
 import SwiftUI
 
-class PageDisplay: ObservableObject {
+class TabBarViewModel: ObservableObject {
     @Published var appPage = 0
 }

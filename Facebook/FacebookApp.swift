@@ -10,14 +10,14 @@ import SwiftData
 
 @main
 struct FacebookApp: App {
-    @StateObject var pageInformation = PageDisplay()
+    @StateObject var tabBarViewModel = TabBarViewModel()
     
     var body: some Scene {
         WindowGroup {
             VStack {
                 VStack {
                     //MARK: Page
-                    switch pageInformation.appPage {
+                    switch tabBarViewModel.appPage {
                     case 0: HomeView()
                     case 1: MenuView()
                     case 2: MessageView()
@@ -30,7 +30,7 @@ struct FacebookApp: App {
                 
                 //MARK: Tab Bar
                 TabBarView()
-                    .environmentObject(pageInformation)
+                    .environmentObject(tabBarViewModel)
             }
         }
     }

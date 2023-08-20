@@ -16,15 +16,15 @@ struct TextButtonView: View {
             iconButtonTappedAction?()
         }) {
             Text(model.text)
-                .font(.system(size: 20))
-                .fontWeight(.semibold)
-                .foregroundStyle(Color.black)
+                .font(.system(size: model.fontSize))
+                .fontWeight(model.fontWeight)
+                .foregroundStyle(model.fontColor)
         }
     }
 }
 
 #Preview("Icon Button View") {
-    TextButtonView(model: TextButtonModel(text: "ChatRound")) {
+    TextButtonView(model: TextButtonModel(text: "ChatRound", fontSize: 20, fontWeight: .bold, fontColor: Color.black)) {
         print("Test")
     }
 }

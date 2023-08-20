@@ -6,8 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct TextButtonModel {
     var text: String
+    var fontSize: CGFloat
+    var fontWeight: Font.Weight
+    var fontColor: Color
 }
 
