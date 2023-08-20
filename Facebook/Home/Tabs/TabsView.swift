@@ -10,18 +10,22 @@ import SwiftUI
 struct TabsView: View {
     var body: some View {
         HStack(alignment: .bottom, spacing: 20) {
-            Text("Feed")
-                .font(.system(size: 24))
-                .fontWeight(.bold)
-            Text("Reels")
-                .font(.system(size: 20))
-            Text("Watch")
-                .font(.system(size: 20))
+            TextButtonView(model: TextButtonModel(text: "Feed")) {
+                print("0")
+            }
+            
+            TextButtonView(model: TextButtonModel(text: "Reels")) {
+                print("1")
+            }
+            
+            TextButtonView(model: TextButtonModel(text: "Watch")) {
+                print("2")
+            }
             
             Spacer()
             
-            IconButtonView(viewModel: IconButtonViewModel(), model: IconButtonModel(imageName: "MicrophoneRound"))
-            IconButtonView(viewModel: IconButtonViewModel(), model: IconButtonModel(imageName: "VideoRound"))
+            IconButtonView(model: IconButtonModel(imageName: "MicrophoneRound"))
+            IconButtonView(model: IconButtonModel(imageName: "VideoRound"))
         }
     }
 }

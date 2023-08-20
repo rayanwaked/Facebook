@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct IconButtonView: View {
-    var viewModel: IconButtonViewModel
     var model: IconButtonModel
     var iconButtonTappedAction: (() -> Void)?
     
@@ -23,7 +22,7 @@ struct IconButtonView: View {
 }
 
 #Preview("Icon Button View") {
-    IconButtonView(viewModel: IconButtonViewModel(), model: IconButtonModel(imageName: "ChatRound")) {
+    IconButtonView(model: IconButtonModel(imageName: "ChatRound")) {
         print("Test")
     }
 }

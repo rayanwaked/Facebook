@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct TextButtonView: View {
+    var model: TextButtonModel
+    var iconButtonTappedAction: (() -> Void)?
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: {
+            iconButtonTappedAction?()
+        }) {
+            Text(model.text)
+                .font(.system(size: 20))
+                .fontWeight(.semibold)
+                .foregroundStyle(Color.black)
+        }
     }
 }
 
-#Preview {
-    TextButtonView()
+#Preview("Icon Button View") {
+    TextButtonView(model: TextButtonModel(text: "ChatRound")) {
+        print("Test")
+    }
 }

@@ -11,30 +11,30 @@ struct TabBarView: View {
     var body: some View {
         Divider()
         HStack(spacing: 20) {
-            IconButtonView(viewModel: IconButtonViewModel(), model: IconButtonModel(imageName: "HomeRound")) {
+            IconButtonView(model: IconButtonModel(imageName: "HomeRound")) {
                 print("0")
             }
             Spacer()
             
-            IconButtonView(viewModel: IconButtonViewModel(), model: IconButtonModel(imageName: "WidgetRound"))
+            IconButtonView(model: IconButtonModel(imageName: "WidgetRound"))
             {
                 print("1")
             }
             Spacer()
             
-            IconButtonView(viewModel: IconButtonViewModel(), model: IconButtonModel(imageName: "ChatRound"))
+            IconButtonView(model: IconButtonModel(imageName: "ChatRound"))
             {
                 print("2")
             }
             Spacer()
             
-            IconButtonView(viewModel: IconButtonViewModel(), model: IconButtonModel(imageName: "BellRound"))
+            IconButtonView(model: IconButtonModel(imageName: "BellRound"))
             {
                 print("3")
             }
             Spacer()
             
-            IconButtonView(viewModel: IconButtonViewModel(), model: IconButtonModel(imageName: "UserRounded"))
+            IconButtonView(model: IconButtonModel(imageName: "UserRounded"))
             {
                 print("4")
             }

@@ -13,7 +13,9 @@ struct PostsView: View {
             //MARK: Post Information
             
             HStack {
-                ProfileButtonView(model: ProfileButtonModel(width: 50, height: 50))
+                Circle()
+                    .frame(height: 50)
+                    .foregroundStyle(.ultraThickMaterial)
                 VStack(alignment: .leading) {
                     Text("First Last")
                         .fontWeight(.bold)
@@ -23,7 +25,7 @@ struct PostsView: View {
                 
                 Spacer()
                 
-                IconButtonView(viewModel: IconButtonViewModel(), model: IconButtonModel(imageName: "MenuRound"))
+                IconButtonView(model: IconButtonModel(imageName: "MenuRound"))
             }
             .padding(.bottom, 10)
             

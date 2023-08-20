@@ -9,20 +9,25 @@ import SwiftUI
 
 struct ReactionPillView: View {
     var model: ReactionPillModel
+    var reactionPillTappedAction: (() -> Void)?
     
     var body: some View {
-        HStack(alignment: .center) {
-            Image(model.imageName)
-                .resizable()
-                .frame(width: 24, height: 24)
-            Text(model.label)
-                .foregroundStyle(Color.black)
-                .padding([.leading, .trailing], 2)
+        Button(action: {
+            reactionPillTappedAction?()
+        }) {
+            HStack(alignment: .center) {
+                Image(model.imageName)
+                    .resizable()
+                    .frame(width: 24, height: 24)
+                Text(model.label)
+                    .foregroundStyle(Color.black)
+                    .padding([.leading, .trailing], 2)
+            }
+            .padding([.leading, .trailing], 10)
+            .padding([.top, .bottom], 8)
+            .background(.thinMaterial)
+            .clipShape(RoundedRectangle(cornerRadius: 20))
         }
-        .padding([.leading, .trailing], 10)
-        .padding([.top, .bottom], 8)
-        .background(.thinMaterial)
-        .clipShape(RoundedRectangle(cornerRadius: 20)) 
     }
 }
 
