@@ -16,7 +16,7 @@ struct TabsView: View {
                 text: "Posts",
                 fontSize: tabsModel.currentTab == 0 ? Font.title2 : Font.title3,
                 fontWeight: tabsModel.currentTab == 0 ? .bold : .semibold,
-                fontColor: tabsModel.currentTab == 0 ? Color.blue : Color.black)) {
+                fontColor: tabsModel.currentTab == 0 ? Color.blue : Color.primary)) {
                 tabsModel.currentTab = 0
             }
             
@@ -24,7 +24,7 @@ struct TabsView: View {
                 text: "Reels",
                 fontSize: tabsModel.currentTab == 1 ? Font.title2 : Font.title3,
                 fontWeight: tabsModel.currentTab == 1 ? .bold : .semibold,
-                fontColor: tabsModel.currentTab == 1 ? Color.blue : Color.black)) {
+                fontColor: tabsModel.currentTab == 1 ? Color.blue : Color.primary)) {
                 tabsModel.currentTab = 1
             }
             
@@ -32,7 +32,7 @@ struct TabsView: View {
                 text: "Videos",
                 fontSize: tabsModel.currentTab == 2 ? Font.title2 : Font.title3,
                 fontWeight: tabsModel.currentTab == 2 ? .bold : .semibold,
-                fontColor: tabsModel.currentTab == 2 ? Color.blue : Color.black)) {
+                fontColor: tabsModel.currentTab == 2 ? Color.blue : Color.primary)) {
                 tabsModel.currentTab = 2
             }
             

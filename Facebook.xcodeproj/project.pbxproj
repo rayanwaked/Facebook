@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B92DEC322A9297EF00D6400F /* TabsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DEC312A9297EF00D6400F /* TabsViewModel.swift */; };
 		B92DEC352A92980000D6400F /* TabsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DEC342A92980000D6400F /* TabsModel.swift */; };
 		B93F54A52A927D7A00857CA5 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93F54A42A927D7A00857CA5 /* NotificationView.swift */; };
 		B93F54A72A927D8000857CA5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93F54A62A927D8000857CA5 /* ProfileView.swift */; };
@@ -39,7 +38,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B92DEC312A9297EF00D6400F /* TabsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsViewModel.swift; sourceTree = "<group>"; };
 		B92DEC342A92980000D6400F /* TabsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsModel.swift; sourceTree = "<group>"; };
 		B93F54A42A927D7A00857CA5 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		B93F54A62A927D8000857CA5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				B92DEC342A92980000D6400F /* TabsModel.swift */,
-				B92DEC312A9297EF00D6400F /* TabsViewModel.swift */,
 				B9D3C1C52A91A35A00680596 /* TabsView.swift */,
 			);
 			path = Tabs;
@@ -352,7 +349,6 @@
 			files = (
 				B93F54AF2A92878700857CA5 /* TabBarViewModel.swift in Sources */,
 				B9D3C1C32A91A30100680596 /* StoriesView.swift in Sources */,
-				B92DEC322A9297EF00D6400F /* TabsViewModel.swift in Sources */,
 				B92DEC352A92980000D6400F /* TabsModel.swift in Sources */,
 				B93F54AB2A927D9E00857CA5 /* MenuView.swift in Sources */,
 				B9D3C1C92A91A37A00680596 /* HeaderView.swift in Sources */,

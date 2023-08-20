@@ -21,7 +21,7 @@ struct ReactionPillView: View {
                     .frame(width: 20, height: 20)
                 Text(model.label)
                     .font(.system(size: 14))
-                    .foregroundStyle(Color.black)
+                    .foregroundStyle(Color.primary)
             }
             .padding([.leading, .trailing], 10)
             .padding([.top, .bottom], 8)
