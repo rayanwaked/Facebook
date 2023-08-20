@@ -40,6 +40,7 @@ struct ProfileButtonView: View {
                     downloadImage()
                 }
         }
+        .accentColor(.gray)
     }
 
     private func downloadImage() {

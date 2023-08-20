@@ -17,48 +17,6 @@ struct StoriesView: View {
                         .foregroundStyle(.gray)
                         .font(Font.subheadline)
                 }
-                
-                VStack {
-                    ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
-                    Text("First")
-                        .foregroundStyle(.gray)
-                        .font(Font.subheadline)
-                }
-                
-                VStack {
-                    ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
-                    Text("First")
-                        .foregroundStyle(.gray)
-                        .font(Font.subheadline)
-                }
-                
-                VStack {
-                    ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
-                    Text("First")
-                        .foregroundStyle(.gray)
-                        .font(Font.subheadline)
-                }
-                
-                VStack {
-                    ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
-                    Text("First")
-                        .foregroundStyle(.gray)
-                        .font(Font.subheadline)
-                }
-                
-                VStack {
-                    ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
-                    Text("First")
-                        .foregroundStyle(.gray)
-                        .font(Font.subheadline)
-                }
-                
-                VStack {
-                    ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
-                    Text("First")
-                        .foregroundStyle(.gray)
-                        .font(Font.subheadline)
-                }
             }
             .padding([.leading, .trailing], 18)
         }
