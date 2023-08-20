@@ -32,6 +32,11 @@ struct FacebookApp: App {
                 TabBarView()
                     .environmentObject(tabBarViewModel)
             }
+            .overlay(alignment: .top) {
+                Color("Background")
+                    .ignoresSafeArea(edges: .top)
+                    .frame(height: 0)
+            }
         }
     }
 }
