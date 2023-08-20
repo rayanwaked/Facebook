@@ -12,22 +12,22 @@ struct TabBarView: View {
     
     var body: some View {
         HStack(spacing: 20) {
-            IconButtonView(model: IconButtonModel(imageName: "HomeRound")) {tabBarViewModel.appPage = 0}
+            IconButtonView(model: tabBarViewModel.appPage == 0 ? IconButtonModel(imageName: "HomeFilled") : IconButtonModel(imageName: "HomeRound")) {tabBarViewModel.appPage = 0}
             Spacer()
             
-            IconButtonView(model: IconButtonModel(imageName: "WidgetRound"))
+            IconButtonView(model: tabBarViewModel.appPage == 1 ? IconButtonModel(imageName: "WidgetFilled") : IconButtonModel(imageName: "WidgetRound"))
                 {tabBarViewModel.appPage = 1}
             Spacer()
             
-            IconButtonView(model: IconButtonModel(imageName: "ChatRound"))
+            IconButtonView(model: tabBarViewModel.appPage == 2 ? IconButtonModel(imageName: "ChatFilled") : IconButtonModel(imageName: "ChatRound"))
                 {tabBarViewModel.appPage = 2}
             Spacer()
             
-            IconButtonView(model: IconButtonModel(imageName: "BellRound"))
+            IconButtonView(model: tabBarViewModel.appPage == 3 ? IconButtonModel(imageName: "BellFilled") : IconButtonModel(imageName: "BellRound"))
                 {tabBarViewModel.appPage = 3}
             Spacer()
             
-            IconButtonView(model: IconButtonModel(imageName: "UserRounded"))
+            IconButtonView(model: tabBarViewModel.appPage == 4 ? IconButtonModel(imageName: "UserFilled") : IconButtonModel(imageName: "UserRound"))
                 {tabBarViewModel.appPage = 4}
         }
         .frame(maxWidth: .infinity, maxHeight: 50)
