@@ -79,6 +79,7 @@ struct StoriesView: View {
                         .fontWeight(.medium)
                 }
             }
+            .padding(.trailing, 18)
         }
 
     }

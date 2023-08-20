@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+struct ReactionPillModel {
+    var imageName: String
+    var label: String
+}
+
 struct ReactionPillView: View {
     var model: ReactionPillModel
     var reactionPillTappedAction: (() -> Void)?

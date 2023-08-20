@@ -26,6 +26,7 @@ struct PostsView: View {
                 Spacer()
                 
                 IconButtonView(model: IconButtonModel(imageName: "MenuRound"))
+                    .opacity(0.5)
             }
             .padding(.bottom, 10)
             
@@ -52,6 +53,21 @@ struct PostsView: View {
                 ReactionPillView(model: ReactionPillModel(imageName: "Love", label: "000"))
                 
                 ReactionPillView(model: ReactionPillModel(imageName: "SmileAddRound", label: "Add"))
+            }
+            
+            HStack {
+                ProfileButtonView(model: ProfileButtonModel(width: 26, height: 26))
+                ProfileButtonView(model: ProfileButtonModel(width: 26, height: 26))
+                    .padding(.leading, -15)
+                ProfileButtonView(model: ProfileButtonModel(width: 26, height: 26))
+                    .padding(.leading, -15)
+                
+                Spacer()
+                
+                Text("00 Comments")
+                    .foregroundStyle(Color.gray)
+                Text("00 Shares")
+                    .foregroundStyle(Color.gray)
             }
         }
     }

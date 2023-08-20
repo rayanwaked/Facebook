@@ -12,9 +12,6 @@ struct HeaderView: View {
     
     var body: some View {
         VStack {
-            Logo()
-                .padding(.top, borderPadding)
-            
             HStack {
                 ProfileButtonView(model: ProfileButtonModel(width: 40, height: 40))
                 
