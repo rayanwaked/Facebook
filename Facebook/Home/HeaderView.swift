@@ -17,7 +17,9 @@ struct HeaderView: View {
                 
                 Spacer()
                 
-                SearchBarView()
+                ActionBarView() {
+                    print("Hey")
+                }
             }
         }
     }

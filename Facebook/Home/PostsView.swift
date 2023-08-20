@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct PostsView: View {
+    let borderPadding = CGFloat(18)
+    
     var body: some View {
         VStack(alignment: .leading) {
             //MARK: Post Information
             
             HStack {
-                Circle()
-                    .frame(height: 50)
-                    .foregroundStyle(.ultraThickMaterial)
+                ProfileButtonView(model: ProfileButtonModel(width: 50, height: 50))
                 VStack(alignment: .leading) {
                     Text("First Last")
                         .fontWeight(.bold)
@@ -28,10 +28,9 @@ struct PostsView: View {
                 IconButtonView(model: IconButtonModel(imageName: "MenuRound"))
                     .opacity(0.5)
             }
-            .padding(.bottom, 10)
+
             
             //MARK: Post Content
-            
             Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
                 .lineSpacing(3)
             
@@ -44,36 +43,41 @@ struct PostsView: View {
                 .frame(maxWidth: .infinity)
                 .frame(height: 400)
                 .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
-                .padding(.top, 10)
+                .padding(.top, 5)
             
             //MARK: Post Interactions
             HStack {
-                ReactionPillView(model: ReactionPillModel(imageName: "Like", label: "000"))
-                
-                ReactionPillView(model: ReactionPillModel(imageName: "Love", label: "000"))
-                
-                ReactionPillView(model: ReactionPillModel(imageName: "SmileAddRound", label: "Add"))
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        ReactionPillView(model: ReactionPillModel(imageName: "Like", label: "000"))
+                        ReactionPillView(model: ReactionPillModel(imageName: "Laugh", label: "000"))
+                        ReactionPillView(model: ReactionPillModel(imageName: "Hate", label: "000"))
+                        
+                        ReactionPillView(model: ReactionPillModel(imageName: "Love", label: "000"))
+                        
+                        ReactionPillView(model: ReactionPillModel(imageName: "SmileAddRound", label: "Add"))
+                    }
+                    .padding([.leading, .trailing], borderPadding)
+                }
+                .clipShape(RoundedRectangle(cornerRadius: 25))
+                 
+                HStack {
+                    ProfileButtonView(model: ProfileButtonModel(width: 30, height: 30))
+                    ProfileButtonView(model: ProfileButtonModel(width: 30, height: 30))
+                        .padding(.leading, -15)
+                    ProfileButtonView(model: ProfileButtonModel(width: 30, height: 30))
+                        .padding(.leading, -15)
+                }
             }
+            .padding(.leading, -borderPadding)
             
             HStack {
-                Circle()
-                    .frame(height: 26)
-                    .foregroundStyle(.ultraThickMaterial)
-                Circle()
-                    .frame(height: 26)
-                    .foregroundStyle(.ultraThickMaterial)
-                    .padding(.leading, -15)
-                Circle()
-                    .frame(height: 26)
-                    .foregroundStyle(.ultraThickMaterial)
-                    .padding(.leading, -15)
-                
                 Spacer()
                 
-                Text("00 Comments")
-                    .foregroundStyle(Color.gray)
-                Text("00 Shares")
-                    .foregroundStyle(Color.gray)
+                TextButtonView(model: TextButtonModel(text: "00 Comments", fontSize: 16, fontWeight: .regular, fontColor: Color.gray))
+                {print("Open Comments")}
+                TextButtonView(model: TextButtonModel(text: "00 Shares", fontSize: 16, fontWeight: .regular, fontColor: Color.gray))
+                {print("Open Sharesheet")}
             }
         }
     }

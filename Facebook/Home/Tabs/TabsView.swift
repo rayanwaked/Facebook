@@ -38,7 +38,9 @@ struct TabsView: View {
             
             Spacer()
             
+            //TODO: Start a voice chat group
             IconButtonView(model: IconButtonModel(imageName: "MicrophoneRound"))
+            //TODO: Start a video chat group
             IconButtonView(model: IconButtonModel(imageName: "VideoRound"))
         }
     }

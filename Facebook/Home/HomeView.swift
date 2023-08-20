@@ -30,24 +30,26 @@ struct HomeView: View {
                 StoriesView()
                 
                 Divider()
-                    .padding([.top, .bottom], 10)
+                    .padding(.top, 5)
+                    .padding(.bottom, 10)
                 
                 //MARK: Stories
                 TabsView()
                     .padding([.leading, .trailing], borderPadding)
+                    .padding(.bottom, -5)
                     .environmentObject(tabsModel)
                 
-                //MARK: Posts
-                switch tabsModel.currentTab {
-                case 0: PostsView()
-                        .padding(borderPadding)
-                case 1: Text("Reels")
-                        .padding(borderPadding)
-                case 2: Text("Watch")
-                        .padding(borderPadding)
-                default: PostsView()
-                        .padding(borderPadding)
+                //MARK: Content
+                VStack {
+                    switch tabsModel.currentTab {
+                    case 0: PostsView()
+                    case 1: Text("Reels")
+                    case 2: Text("Watch")
+                    default: PostsView()
+                    }
                 }
+                .padding(borderPadding)
+                .padding(.bottom, borderPadding)
             }
         }
     }

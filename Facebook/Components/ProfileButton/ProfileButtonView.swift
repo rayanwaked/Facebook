@@ -10,32 +10,36 @@ import SwiftUI
 struct ProfileButtonView: View {
     @State private var downloadedImage: UIImage?
     var model: ProfileButtonModel
+    var profileButtonTappedAction: (() -> Void)?
 
     var body: some View {
-        Circle()
-            .frame(width: model.width, height: model.height)
-            .overlay(
-                AsyncImage(url: URL(string: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80")) { image in
-                    image
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .clipShape(Circle())
-                } placeholder: {
-                    // Custom placeholder view using the downloaded image
-                    if let downloadedImage = downloadedImage {
-                        Image(uiImage: downloadedImage)
+        Button(action: {
+            profileButtonTappedAction?()
+        }) {
+            Circle()
+                .frame(width: model.width, height: model.height)
+                .overlay(
+                    AsyncImage(url: URL(string: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80")) { image in
+                        image
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .clipShape(Circle())
-                    } else {
-                        Color.gray // Fallback if downloadedImage is nil
-                            .clipShape(Circle())
+                    } placeholder: {
+                        if let downloadedImage = downloadedImage {
+                            Image(uiImage: downloadedImage)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .clipShape(Circle())
+                        } else {
+                            Color.gray
+                                .clipShape(Circle())
+                        }
                     }
+                )
+                .onAppear {
+                    downloadImage()
                 }
-            )
-            .onAppear {
-                downloadImage()
-            }
+        }
     }
 
     private func downloadImage() {

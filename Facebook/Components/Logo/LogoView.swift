@@ -11,7 +11,7 @@ struct Logo: View {
     var body: some View {
         Text("facebook")
             .font(.system(size: 40))
-            .fontWeight(.heavy)
+            .fontWeight(.bold)
             .foregroundStyle(Color.blue)
     }
 }

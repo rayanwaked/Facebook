@@ -18,10 +18,10 @@ struct ReactionPillView: View {
             HStack(alignment: .center) {
                 Image(model.imageName)
                     .resizable()
-                    .frame(width: 24, height: 24)
+                    .frame(width: 20, height: 20)
                 Text(model.label)
+                    .font(.system(size: 14))
                     .foregroundStyle(Color.black)
-                    .padding([.leading, .trailing], 2)
             }
             .padding([.leading, .trailing], 10)
             .padding([.top, .bottom], 8)

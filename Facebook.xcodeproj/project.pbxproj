@@ -19,10 +19,10 @@
 		B95ED2B82A8FE554002A6DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B95ED2B72A8FE554002A6DE4 /* Assets.xcassets */; };
 		B95ED2EA2A901BD4002A6DE4 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95ED2E92A901BD4002A6DE4 /* LogoView.swift */; };
 		B95ED2EC2A901C21002A6DE4 /* ProfileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95ED2EB2A901C21002A6DE4 /* ProfileButtonView.swift */; };
-		B95ED2EE2A901E70002A6DE4 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95ED2ED2A901E70002A6DE4 /* SearchBarView.swift */; };
+		B95ED2EE2A901E70002A6DE4 /* ActionBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95ED2ED2A901E70002A6DE4 /* ActionBarView.swift */; };
 		B95ED2F72A90202F002A6DE4 /* ProfileButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95ED2F62A90202F002A6DE4 /* ProfileButtonViewModel.swift */; };
 		B95ED2F92A902055002A6DE4 /* ProfileButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95ED2F82A902055002A6DE4 /* ProfileButtonModel.swift */; };
-		B95ED2FE2A90209B002A6DE4 /* SearchBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95ED2FD2A90209B002A6DE4 /* SearchBarModel.swift */; };
+		B95ED2FE2A90209B002A6DE4 /* ActionBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95ED2FD2A90209B002A6DE4 /* ActionBarModel.swift */; };
 		B95ED3032A902135002A6DE4 /* IconButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95ED3022A902135002A6DE4 /* IconButtonView.swift */; };
 		B95ED3072A902149002A6DE4 /* IconButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95ED3062A902149002A6DE4 /* IconButtonModel.swift */; };
 		B9ACB4892A91AE290040ED4A /* ReactionPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ACB4882A91AE290040ED4A /* ReactionPill.swift */; };
@@ -52,10 +52,10 @@
 		B95ED2B72A8FE554002A6DE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B95ED2E92A901BD4002A6DE4 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		B95ED2EB2A901C21002A6DE4 /* ProfileButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButtonView.swift; sourceTree = "<group>"; };
-		B95ED2ED2A901E70002A6DE4 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		B95ED2ED2A901E70002A6DE4 /* ActionBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionBarView.swift; sourceTree = "<group>"; };
 		B95ED2F62A90202F002A6DE4 /* ProfileButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButtonViewModel.swift; sourceTree = "<group>"; };
 		B95ED2F82A902055002A6DE4 /* ProfileButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButtonModel.swift; sourceTree = "<group>"; };
-		B95ED2FD2A90209B002A6DE4 /* SearchBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarModel.swift; sourceTree = "<group>"; };
+		B95ED2FD2A90209B002A6DE4 /* ActionBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionBarModel.swift; sourceTree = "<group>"; };
 		B95ED3022A902135002A6DE4 /* IconButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButtonView.swift; sourceTree = "<group>"; };
 		B95ED3062A902149002A6DE4 /* IconButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButtonModel.swift; sourceTree = "<group>"; };
 		B9ACB4882A91AE290040ED4A /* ReactionPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionPill.swift; sourceTree = "<group>"; };
@@ -131,8 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				B95ED2B32A8FE552002A6DE4 /* HomeView.swift */,
-				B9D3C1CB2A91A3F300680596 /* PostsView.swift */,
 				B9D3C1C82A91A37A00680596 /* HeaderView.swift */,
+				B9D3C1CB2A91A3F300680596 /* PostsView.swift */,
 				B92DEC332A9297F500D6400F /* Tabs */,
 				B9D3C1C22A91A30100680596 /* StoriesView.swift */,
 			);
@@ -209,7 +209,7 @@
 				B9D3C1CD2A91A41C00680596 /* TabBar */,
 				B95ED2EF2A901FA8002A6DE4 /* Logo */,
 				B95ED2F52A90200F002A6DE4 /* ProfileButton */,
-				B95ED2FA2A90205D002A6DE4 /* SearchBar */,
+				B95ED2FA2A90205D002A6DE4 /* ActionBar */,
 				B9ACB4902A91C2F20040ED4A /* TextButton */,
 				B95ED3012A902127002A6DE4 /* IconButton */,
 			);
@@ -234,13 +234,13 @@
 			path = ProfileButton;
 			sourceTree = "<group>";
 		};
-		B95ED2FA2A90205D002A6DE4 /* SearchBar */ = {
+		B95ED2FA2A90205D002A6DE4 /* ActionBar */ = {
 			isa = PBXGroup;
 			children = (
-				B95ED2FD2A90209B002A6DE4 /* SearchBarModel.swift */,
-				B95ED2ED2A901E70002A6DE4 /* SearchBarView.swift */,
+				B95ED2FD2A90209B002A6DE4 /* ActionBarModel.swift */,
+				B95ED2ED2A901E70002A6DE4 /* ActionBarView.swift */,
 			);
-			path = SearchBar;
+			path = ActionBar;
 			sourceTree = "<group>";
 		};
 		B95ED3012A902127002A6DE4 /* IconButton */ = {
@@ -362,13 +362,13 @@
 				B9D3C1C62A91A35A00680596 /* TabsView.swift in Sources */,
 				B93F54A92A927D8800857CA5 /* MessageView.swift in Sources */,
 				B9D3C1CF2A91A42400680596 /* TabBarView.swift in Sources */,
-				B95ED2FE2A90209B002A6DE4 /* SearchBarModel.swift in Sources */,
+				B95ED2FE2A90209B002A6DE4 /* ActionBarModel.swift in Sources */,
 				B9D3C1CC2A91A3F300680596 /* PostsView.swift in Sources */,
 				B95ED2EC2A901C21002A6DE4 /* ProfileButtonView.swift in Sources */,
 				B9ACB4952A91C31C0040ED4A /* TextButtonView.swift in Sources */,
 				B9ACB48D2A91B37F0040ED4A /* TabBarModel.swift in Sources */,
 				B95ED2B42A8FE552002A6DE4 /* HomeView.swift in Sources */,
-				B95ED2EE2A901E70002A6DE4 /* SearchBarView.swift in Sources */,
+				B95ED2EE2A901E70002A6DE4 /* ActionBarView.swift in Sources */,
 				B95ED3032A902135002A6DE4 /* IconButtonView.swift in Sources */,
 				B9ACB4892A91AE290040ED4A /* ReactionPill.swift in Sources */,
 				B95ED3072A902149002A6DE4 /* IconButtonModel.swift in Sources */,

@@ -19,54 +19,42 @@ struct StoriesView: View {
                 }
                 
                 VStack {
-                    Circle()
-                        .frame(height: 60)
-                        .foregroundStyle(.ultraThickMaterial)
+                    ProfileButtonView(model: ProfileButtonModel(width: 60, height: 60))
                     Text("First")
                         .foregroundStyle(.gray)
                         .font(Font.system(size: 14).weight(.medium))
                 }
                 
                 VStack {
-                    Circle()
-                        .frame(height: 60)
-                        .foregroundStyle(.ultraThickMaterial)
+                    ProfileButtonView(model: ProfileButtonModel(width: 60, height: 60))
                     Text("First")
                         .foregroundStyle(.gray)
                         .font(Font.system(size: 14).weight(.medium))
                 }
                 
                 VStack {
-                    Circle()
-                        .frame(height: 60)
-                        .foregroundStyle(.ultraThickMaterial)
+                    ProfileButtonView(model: ProfileButtonModel(width: 60, height: 60))
                     Text("First")
                         .foregroundStyle(.gray)
                         .font(Font.system(size: 14).weight(.medium))
                 }
                 
                 VStack {
-                    Circle()
-                        .frame(height: 60)
-                        .foregroundStyle(.ultraThickMaterial)
+                    ProfileButtonView(model: ProfileButtonModel(width: 60, height: 60))
                     Text("First")
                         .foregroundStyle(.gray)
                         .font(Font.system(size: 14).weight(.medium))
                 }
                 
                 VStack {
-                    Circle()
-                        .frame(height: 60)
-                        .foregroundStyle(.ultraThickMaterial)
+                    ProfileButtonView(model: ProfileButtonModel(width: 60, height: 60))
                     Text("First")
                         .foregroundStyle(.gray)
                         .font(Font.system(size: 14).weight(.medium))
                 }
                 
                 VStack {
-                    Circle()
-                        .frame(height: 60)
-                        .foregroundStyle(.ultraThickMaterial)
+                    ProfileButtonView(model: ProfileButtonModel(width: 60, height: 60))
                     Text("First")
                         .foregroundStyle(.gray)
                         .font(Font.system(size: 14).weight(.medium))
