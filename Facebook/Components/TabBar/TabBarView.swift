@@ -8,36 +8,27 @@
 import SwiftUI
 
 struct TabBarView: View {
+    @EnvironmentObject var pageInformation: PageDisplay
+    
     var body: some View {
-        Divider()
         HStack(spacing: 20) {
-            IconButtonView(model: IconButtonModel(imageName: "HomeRound")) {
-                print("0")
-            }
+            IconButtonView(model: IconButtonModel(imageName: "HomeRound")) {pageInformation.appPage = 0}
             Spacer()
             
             IconButtonView(model: IconButtonModel(imageName: "WidgetRound"))
-            {
-                print("1")
-            }
+                {pageInformation.appPage = 1}
             Spacer()
             
             IconButtonView(model: IconButtonModel(imageName: "ChatRound"))
-            {
-                print("2")
-            }
+                {pageInformation.appPage = 2}
             Spacer()
             
             IconButtonView(model: IconButtonModel(imageName: "BellRound"))
-            {
-                print("3")
-            }
+                {pageInformation.appPage = 3}
             Spacer()
             
             IconButtonView(model: IconButtonModel(imageName: "UserRounded"))
-            {
-                print("4")
-            }
+                {pageInformation.appPage = 4}
         }
         .frame(maxWidth: .infinity, maxHeight: 50)
         .padding([.leading, .trailing], 35)

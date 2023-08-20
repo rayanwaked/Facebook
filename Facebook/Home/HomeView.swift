@@ -41,9 +41,6 @@ struct HomeView: View {
                 PostsView()
                 .padding(borderPadding)
             }
-            
-            //MARK: Tab Bar
-            TabBarView()
         }
     }
 }
