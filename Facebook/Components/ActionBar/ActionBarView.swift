@@ -17,7 +17,7 @@ struct ActionBarView: View {
             HStack {
                 Text("What's on your mind?")
                     .foregroundStyle(.gray.opacity(0.8))
-                    .font(Font.system(size: 15).weight(.medium))
+                    .font(Font.body.weight(.medium))
                     .padding()
                 Spacer()
             }

@@ -10,7 +10,7 @@ import SwiftUI
 
 struct TextButtonModel {
     var text: String
-    var fontSize: CGFloat
+    var fontSize: Font
     var fontWeight: Font.Weight
     var fontColor: Color
 }

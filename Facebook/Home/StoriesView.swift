@@ -15,49 +15,49 @@ struct StoriesView: View {
                     ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
                     Text("You")
                         .foregroundStyle(.gray)
-                        .font(Font.system(size: 14).weight(.medium))
+                        .font(Font.subheadline)
                 }
                 
                 VStack {
                     ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
                     Text("First")
                         .foregroundStyle(.gray)
-                        .font(Font.system(size: 14).weight(.medium))
+                        .font(Font.subheadline)
                 }
                 
                 VStack {
                     ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
                     Text("First")
                         .foregroundStyle(.gray)
-                        .font(Font.system(size: 14).weight(.medium))
+                        .font(Font.subheadline)
                 }
                 
                 VStack {
                     ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
                     Text("First")
                         .foregroundStyle(.gray)
-                        .font(Font.system(size: 14).weight(.medium))
+                        .font(Font.subheadline)
                 }
                 
                 VStack {
                     ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
                     Text("First")
                         .foregroundStyle(.gray)
-                        .font(Font.system(size: 14).weight(.medium))
+                        .font(Font.subheadline)
                 }
                 
                 VStack {
                     ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
                     Text("First")
                         .foregroundStyle(.gray)
-                        .font(Font.system(size: 14).weight(.medium))
+                        .font(Font.subheadline)
                 }
                 
                 VStack {
                     ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
                     Text("First")
                         .foregroundStyle(.gray)
-                        .font(Font.system(size: 14).weight(.medium))
+                        .font(Font.subheadline)
                 }
             }
             .padding([.leading, .trailing], 18)

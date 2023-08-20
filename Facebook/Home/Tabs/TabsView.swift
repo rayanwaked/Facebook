@@ -14,7 +14,7 @@ struct TabsView: View {
         HStack(alignment: .bottom, spacing: 20) {
             TextButtonView(model: TextButtonModel(
                 text: "Feed",
-                fontSize: tabsModel.currentTab == 0 ? 24 : 20,
+                fontSize: tabsModel.currentTab == 0 ? Font.title2 : Font.title3,
                 fontWeight: tabsModel.currentTab == 0 ? .bold : .semibold,
                 fontColor: tabsModel.currentTab == 0 ? Color.blue : Color.black)) {
                 tabsModel.currentTab = 0
@@ -22,7 +22,7 @@ struct TabsView: View {
             
             TextButtonView(model: TextButtonModel(
                 text: "Reels",
-                fontSize: tabsModel.currentTab == 1 ? 24 : 20,
+                fontSize: tabsModel.currentTab == 1 ? Font.title2 : Font.title3,
                 fontWeight: tabsModel.currentTab == 1 ? .bold : .semibold,
                 fontColor: tabsModel.currentTab == 1 ? Color.blue : Color.black)) {
                 tabsModel.currentTab = 1
@@ -30,7 +30,7 @@ struct TabsView: View {
             
             TextButtonView(model: TextButtonModel(
                 text: "Watch",
-                fontSize: tabsModel.currentTab == 2 ? 24 : 20,
+                fontSize: tabsModel.currentTab == 2 ? Font.title2 : Font.title3,
                 fontWeight: tabsModel.currentTab == 2 ? .bold : .semibold,
                 fontColor: tabsModel.currentTab == 2 ? Color.blue : Color.black)) {
                 tabsModel.currentTab = 2
