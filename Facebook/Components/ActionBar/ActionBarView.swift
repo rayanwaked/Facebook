@@ -14,18 +14,17 @@ struct ActionBarView: View {
         Button(action: {
             actionBarTappedAction?()
         }) {
-            ZStack(alignment: .leading) {
-                Rectangle()
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 50)
-                    .foregroundStyle(.thickMaterial)
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
+            HStack {
                 Text("What's on your mind?")
                     .foregroundStyle(.gray.opacity(0.8))
-                    .font(Font.system(size: 16).weight(.medium))
+                    .font(Font.system(size: 15).weight(.medium))
                     .padding()
                 Spacer()
             }
+            .frame(maxWidth: .infinity)
+            .frame(height: 45)
+            .background(.thickMaterial)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
         }
     }
 }

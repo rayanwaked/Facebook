@@ -13,13 +13,14 @@ struct PostsView: View {
     var body: some View {
         VStack(alignment: .leading) {
             //MARK: Post Information
-            
             HStack {
-                ProfileButtonView(model: ProfileButtonModel(width: 50, height: 50))
+                ProfileButtonView(model: ProfileButtonModel(width: 40, height: 40))
                 VStack(alignment: .leading) {
                     Text("First Last")
+                        .font(.system(size: 16))
                         .fontWeight(.bold)
                     Text("Month 00 at 00:00")
+                        .font(.system(size: 16))
                         .foregroundStyle(.gray)
                 }
                 
@@ -32,7 +33,8 @@ struct PostsView: View {
             
             //MARK: Post Content
             Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
-                .lineSpacing(3)
+                .lineSpacing(2)
+                .font(.system(size: 15))
             
             Rectangle()
                 .overlay(
@@ -74,9 +76,9 @@ struct PostsView: View {
             HStack {
                 Spacer()
                 
-                TextButtonView(model: TextButtonModel(text: "00 Comments", fontSize: 16, fontWeight: .regular, fontColor: Color.gray))
+                TextButtonView(model: TextButtonModel(text: "00 Comments", fontSize: 15, fontWeight: .regular, fontColor: Color.gray))
                 {print("Open Comments")}
-                TextButtonView(model: TextButtonModel(text: "00 Shares", fontSize: 16, fontWeight: .regular, fontColor: Color.gray))
+                TextButtonView(model: TextButtonModel(text: "00 Shares", fontSize: 15, fontWeight: .regular, fontColor: Color.gray))
                 {print("Open Sharesheet")}
             }
         }

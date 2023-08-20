@@ -12,49 +12,49 @@ struct StoriesView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 VStack {
-                    ProfileButtonView(model: ProfileButtonModel(width: 60, height: 60))
+                    ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
                     Text("You")
                         .foregroundStyle(.gray)
                         .font(Font.system(size: 14).weight(.medium))
                 }
                 
                 VStack {
-                    ProfileButtonView(model: ProfileButtonModel(width: 60, height: 60))
+                    ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
                     Text("First")
                         .foregroundStyle(.gray)
                         .font(Font.system(size: 14).weight(.medium))
                 }
                 
                 VStack {
-                    ProfileButtonView(model: ProfileButtonModel(width: 60, height: 60))
+                    ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
                     Text("First")
                         .foregroundStyle(.gray)
                         .font(Font.system(size: 14).weight(.medium))
                 }
                 
                 VStack {
-                    ProfileButtonView(model: ProfileButtonModel(width: 60, height: 60))
+                    ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
                     Text("First")
                         .foregroundStyle(.gray)
                         .font(Font.system(size: 14).weight(.medium))
                 }
                 
                 VStack {
-                    ProfileButtonView(model: ProfileButtonModel(width: 60, height: 60))
+                    ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
                     Text("First")
                         .foregroundStyle(.gray)
                         .font(Font.system(size: 14).weight(.medium))
                 }
                 
                 VStack {
-                    ProfileButtonView(model: ProfileButtonModel(width: 60, height: 60))
+                    ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
                     Text("First")
                         .foregroundStyle(.gray)
                         .font(Font.system(size: 14).weight(.medium))
                 }
                 
                 VStack {
-                    ProfileButtonView(model: ProfileButtonModel(width: 60, height: 60))
+                    ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
                     Text("First")
                         .foregroundStyle(.gray)
                         .font(Font.system(size: 14).weight(.medium))

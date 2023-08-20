@@ -10,6 +10,7 @@ import SwiftData
 
 struct HomeView: View {
     @StateObject var tabsModel = TabsModel()
+    @State private var isRefreshing = false
     let borderPadding = CGFloat(18)
     
     var body: some View {
@@ -22,6 +23,7 @@ struct HomeView: View {
                 //MARK: Header
                 HeaderView()
                     .padding([.leading, .trailing], borderPadding)
+                    .padding(.top, 5)
                 
                 Divider()
                     .padding([.top, .bottom], 10)
@@ -52,6 +54,16 @@ struct HomeView: View {
                 .padding(.bottom, borderPadding)
             }
         }
+        .refreshable {
+            await refreshData()
+            print("refreshed")
+        }
+    }
+    
+    func refreshData() async {
+        isRefreshing = true
+        await Task.sleep(2 * 1_000_000_000) // Simulate a 2-second refresh
+        isRefreshing = false
     }
 }
 
