@@ -45,7 +45,7 @@ struct HomeView: View {
                 VStack {
                     switch tabsModel.currentTab {
                     case 0: PostsView()
-                    case 1: Text("Reels")
+                    case 1: ReelsView()
                     case 2: Text("Watch")
                     default: PostsView()
                     }

@@ -36,6 +36,9 @@
 		B9D3C1CC2A91A3F300680596 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D3C1CB2A91A3F300680596 /* PostsView.swift */; };
 		B9D3C1CF2A91A42400680596 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D3C1CE2A91A42400680596 /* TabBarView.swift */; };
 		B9EA10032A92DCDF00A30CB4 /* ReactionGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA10022A92DCDF00A30CB4 /* ReactionGroupView.swift */; };
+		B9EA10062A92DEB300A30CB4 /* AddIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA10052A92DEB300A30CB4 /* AddIndicatorView.swift */; };
+		B9EA100A2A92E64400A30CB4 /* ReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA10092A92E64400A30CB4 /* ReelsView.swift */; };
+		B9EA100D2A92EA0C00A30CB4 /* ReelsReactionGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA100C2A92EA0C00A30CB4 /* ReelsReactionGroupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +73,9 @@
 		B9D3C1CB2A91A3F300680596 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		B9D3C1CE2A91A42400680596 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		B9EA10022A92DCDF00A30CB4 /* ReactionGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionGroupView.swift; sourceTree = "<group>"; };
+		B9EA10052A92DEB300A30CB4 /* AddIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIndicatorView.swift; sourceTree = "<group>"; };
+		B9EA10092A92E64400A30CB4 /* ReelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsView.swift; sourceTree = "<group>"; };
+		B9EA100C2A92EA0C00A30CB4 /* ReelsReactionGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsReactionGroupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,9 +136,11 @@
 			isa = PBXGroup;
 			children = (
 				B95ED2B32A8FE552002A6DE4 /* HomeView.swift */,
-				B9D3C1C82A91A37A00680596 /* HeaderView.swift */,
-				B9D3C1CB2A91A3F300680596 /* PostsView.swift */,
 				B9D3C1C22A91A30100680596 /* StoriesView.swift */,
+				B9D3C1C82A91A37A00680596 /* HeaderView.swift */,
+				B92DEC332A9297F500D6400F /* Tabs */,
+				B9D3C1CB2A91A3F300680596 /* PostsView.swift */,
+				B9EA10092A92E64400A30CB4 /* ReelsView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -203,7 +211,7 @@
 		B95ED2E82A901BC0002A6DE4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				B92DEC332A9297F500D6400F /* Tabs */,
+				B9EA10042A92DE9C00A30CB4 /* AddIndicator */,
 				B9EA10012A92DCCB00A30CB4 /* ReactionGroup */,
 				B9ACB4872A91AE1E0040ED4A /* ReactionPill */,
 				B9D3C1CD2A91A41C00680596 /* TabBar */,
@@ -284,8 +292,17 @@
 			isa = PBXGroup;
 			children = (
 				B9EA10022A92DCDF00A30CB4 /* ReactionGroupView.swift */,
+				B9EA100C2A92EA0C00A30CB4 /* ReelsReactionGroupView.swift */,
 			);
 			path = ReactionGroup;
+			sourceTree = "<group>";
+		};
+		B9EA10042A92DE9C00A30CB4 /* AddIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				B9EA10052A92DEB300A30CB4 /* AddIndicatorView.swift */,
+			);
+			path = AddIndicator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,7 +378,9 @@
 				B93F54AF2A92878700857CA5 /* TabBarViewModel.swift in Sources */,
 				B9D3C1C32A91A30100680596 /* StoriesView.swift in Sources */,
 				B92DEC352A92980000D6400F /* TabsModel.swift in Sources */,
+				B9EA100A2A92E64400A30CB4 /* ReelsView.swift in Sources */,
 				B93F54AB2A927D9E00857CA5 /* MenuView.swift in Sources */,
+				B9EA100D2A92EA0C00A30CB4 /* ReelsReactionGroupView.swift in Sources */,
 				B9D3C1C92A91A37A00680596 /* HeaderView.swift in Sources */,
 				B9EA10032A92DCDF00A30CB4 /* ReactionGroupView.swift in Sources */,
 				B93F54A52A927D7A00857CA5 /* NotificationView.swift in Sources */,
@@ -372,6 +391,7 @@
 				B9D3C1CF2A91A42400680596 /* TabBarView.swift in Sources */,
 				B95ED2FE2A90209B002A6DE4 /* ActionBarModel.swift in Sources */,
 				B9D3C1CC2A91A3F300680596 /* PostsView.swift in Sources */,
+				B9EA10062A92DEB300A30CB4 /* AddIndicatorView.swift in Sources */,
 				B95ED2EC2A901C21002A6DE4 /* ProfileButtonView.swift in Sources */,
 				B9ACB4952A91C31C0040ED4A /* TextButtonView.swift in Sources */,
 				B9ACB48D2A91B37F0040ED4A /* TabBarModel.swift in Sources */,

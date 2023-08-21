@@ -12,7 +12,10 @@ struct StoriesView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 VStack {
-                    ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
+                    ZStack(alignment: .bottomTrailing) {
+                        ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
+                        AddIndicatorView()
+                    }
                     Text("You")
                         .foregroundStyle(.gray)
                         .font(Font.subheadline)

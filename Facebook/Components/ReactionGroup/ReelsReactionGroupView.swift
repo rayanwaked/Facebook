@@ -1,5 +1,5 @@
 //
-//  ReactionGroupView.swift
+//  ReelsReactionGroupView.swift
 //  Facebook
 //
 //  Created by Rayan Waked on 8/20/23.
@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct ReactionGroupView: View {
+struct ReelsReactionGroupView: View {
     var borderPadding = CGFloat(18)
     
     var body: some View {
-        HStack {
+        HStack(alignment: .bottom) {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ReactionPillView(model: ReactionPillModel(imageName: "Like", label: "000"))
@@ -25,28 +25,18 @@ struct ReactionGroupView: View {
                 .padding([.leading, .trailing], borderPadding)
             }
             .clipShape(RoundedRectangle(cornerRadius: 25))
-             
-            HStack {
-                ProfileButtonView(model: ProfileButtonModel(width: 30, height: 30))
-                ProfileButtonView(model: ProfileButtonModel(width: 30, height: 30))
-                    .padding(.leading, -15)
-                ProfileButtonView(model: ProfileButtonModel(width: 30, height: 30))
-                    .padding(.leading, -15)
+            
+            //MARK: Share & Profile Reaction Images
+            VStack {
+                ReactionPillView(model: ReactionPillModel(imageName: "CommentsFilled", label: ""))
+                ReactionPillView(model: ReactionPillModel(imageName: "SaveFilled", label: ""))
+                ReactionPillView(model: ReactionPillModel(imageName: "SendFilled", label: ""))
             }
         }
         .padding(.leading, -borderPadding)
-        
-        HStack {
-            Spacer()
-            
-            TextButtonView(model: TextButtonModel(text: "00 Comments", fontSize: Font.body, fontWeight: .regular, fontColor: Color.gray))
-            {print("Open Comments")}
-            TextButtonView(model: TextButtonModel(text: "00 Shares", fontSize: Font.body, fontWeight: .regular, fontColor: Color.gray))
-            {print("Open Sharesheet")}
-        }
     }
 }
 
 #Preview("Reaction Group View") {
-    ReactionGroupView()
+    ReelsReactionGroupView()
 }

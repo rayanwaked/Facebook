@@ -18,10 +18,12 @@ struct ReactionPillView: View {
             HStack(alignment: .center) {
                 Image(model.imageName)
                     .resizable()
-                    .frame(width: 20, height: 20)
-                Text(model.label)
-                    .font(.system(size: 14))
-                    .foregroundStyle(Color.primary)
+                    .frame(width: 24, height: 24)
+                if !model.label.isEmpty {
+                    Text(model.label)
+                        .font(.system(size: 14))
+                        .foregroundStyle(Color.primary)
+                }
             }
             .padding([.leading, .trailing], 10)
             .padding([.top, .bottom], 8)
@@ -31,6 +33,6 @@ struct ReactionPillView: View {
     }
 }
 
-#Preview("Reaction Pill") {
+#Preview("Reaction Pill View") {
     ReactionPillView(model: ReactionPillModel(imageName: "Like", label: "123"))
 }
