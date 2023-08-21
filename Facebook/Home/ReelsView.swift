@@ -10,15 +10,11 @@ import SwiftUI
 struct ReelsView: View {
     var body: some View {
         ZStack(alignment: .topLeading) {
-            Rectangle()
-                .overlay(
-                    Image("SampleImage")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                )
-                .frame(maxWidth: .infinity)
+            Image("SampleImage")
+                .resizable()
                 .frame(height: 600)
                 .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
+                .padding(.top, 5)
             
             VStack {
                 HStack {

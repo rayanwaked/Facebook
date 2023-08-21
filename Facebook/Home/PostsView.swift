@@ -36,13 +36,8 @@ struct PostsView: View {
                 .lineSpacing(2)
                 .font(.body)
             
-            Rectangle()
-                .overlay(
-                    Image("SampleImage")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                )
-                .frame(maxWidth: .infinity)
+            Image("SampleImage")
+                .resizable()
                 .frame(height: 400)
                 .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
                 .padding(.top, 5)
