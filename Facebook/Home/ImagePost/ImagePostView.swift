@@ -1,23 +1,25 @@
 //
-//  ViewsView.swift
+//  ImagePost.swift
 //  Facebook
 //
-//  Created by Rayan Waked on 8/20/23.
+//  Created by Rayan Waked on 8/21/23.
 //
 
 import SwiftUI
 
-struct VideosView: View {
+struct ImagePostView: View {
+    var model: ImagePostModel
+    
     var body: some View {
         VStack(alignment: .leading) {
             //MARK: Post Information
             HStack {
                 ProfileButtonView(model: ProfileButtonModel(width: 40, height: 40, story: false))
                 VStack(alignment: .leading) {
-                    Text("First Last")
+                    Text(model.name)
                         .font(.body)
                         .fontWeight(.bold)
-                    Text("Month 00 at 00:00")
+                    Text(model.date)
                         .font(.subheadline)
                         .foregroundStyle(.gray)
                 }
@@ -30,22 +32,29 @@ struct VideosView: View {
 
             
             //MARK: Post Content
-            Image("SampleImage")
-                .resizable()
-                .frame(height: 250)
-                .padding([.top, .bottom], 5)
-                .padding([.leading, .trailing], -borderPadding)
-            
-            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+            Text(model.caption)
                 .lineSpacing(2)
                 .font(.body)
             
+            Image(model.image)
+                .resizable()
+                .frame(height: 400)
+                .padding([.leading, .trailing], -borderPadding)
+            
             //MARK: Post Interactions
             ReactionGroupView()
+            
+            Divider()
+                .padding(borderPadding/1.5)
         }
     }
 }
 
-#Preview("Videos View"){
-    VideosView()
+#Preview {
+    ImagePostView(model: ImagePostModel(
+        name: "First Last",
+        date: "Month 00 at 00:00",
+        image: "SampleImage",
+        caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        number: 1))
 }

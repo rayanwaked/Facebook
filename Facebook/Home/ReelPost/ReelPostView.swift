@@ -1,29 +1,31 @@
 //
-//  ReelsView.swift
+//  ReelsModel.swift
 //  Facebook
 //
-//  Created by Rayan Waked on 8/20/23.
+//  Created by Rayan Waked on 8/21/23.
 //
 
 import SwiftUI
 
-struct ReelsView: View {
+struct ReelPostView: View {
+    var model: ReelPostModel
+    
     var body: some View {
         ZStack(alignment: .topLeading) {
-            Image("SampleImage")
+            Image(model.reel)
                 .resizable()
-                .frame(height: 700)
-                .padding(.top, 5)
+                .frame(height: UIScreen.main.bounds.height * 0.9)
+                .modifier(FullScreenModifier())
             
             VStack {
                 HStack {
                     ProfileButtonView(model: ProfileButtonModel(width: 40, height: 40, story: false))
                     VStack(alignment: .leading) {
-                        Text("First Last")
+                        Text(model.name)
                             .font(.body)
                             .fontWeight(.bold)
                             .foregroundStyle(Color.white)
-                        Text("Lorem ipsum dolor set amet")
+                        Text(model.caption)
                             .font(.subheadline)
                             .foregroundStyle(Color.white)
                     }
@@ -39,11 +41,12 @@ struct ReelsView: View {
             .padding()
         }
         .frame(maxWidth: .infinity)
-        .frame(height: 700)
+        .frame(height: UIScreen.main.bounds.height * 0.9)
         .padding([.leading, .trailing], -borderPadding)
+        .padding(.bottom, -8)
     }
 }
 
-#Preview("Reels View") {
-    ReelsView()
+#Preview("Reels Post Preview") {
+    ReelPostView(model: ReelPostModel(name: "First Last", date: "Month 00 at 00:00", reel: "SampleImage", caption: "Lorem ipsum dolor set amet"))
 }

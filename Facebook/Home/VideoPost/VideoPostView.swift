@@ -1,13 +1,14 @@
 //
-//  PostsView.swift
+//  VideoPostModel.swift
 //  Facebook
 //
-//  Created by Rayan Waked on 8/19/23.
+//  Created by Rayan Waked on 8/21/23.
 //
 
 import SwiftUI
 
-struct PostsView: View {
+struct VideoPostView: View {
+    var model: VideoPostModel
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -15,10 +16,10 @@ struct PostsView: View {
             HStack {
                 ProfileButtonView(model: ProfileButtonModel(width: 40, height: 40, story: false))
                 VStack(alignment: .leading) {
-                    Text("First Last")
+                    Text(model.name)
                         .font(.body)
                         .fontWeight(.bold)
-                    Text("Month 00 at 00:00")
+                    Text(model.date)
                         .font(.subheadline)
                         .foregroundStyle(.gray)
                 }
@@ -31,21 +32,25 @@ struct PostsView: View {
 
             
             //MARK: Post Content
-            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+            Image(model.video)
+                .resizable()
+                .frame(height: 250)
+                .padding([.top, .bottom], 5)
+                .padding([.leading, .trailing], -borderPadding)
+            
+            Text(model.caption)
                 .lineSpacing(2)
                 .font(.body)
             
-            Image("SampleImage")
-                .resizable()
-                .frame(height: 400)
-                .padding([.leading, .trailing], -borderPadding)
-            
             //MARK: Post Interactions
             ReactionGroupView()
+            
+            Divider()
+                .padding(borderPadding/1.5)
         }
     }
 }
 
-#Preview("Posts View") {
-    PostsView()
+#Preview("Video Post View") {
+    VideoPostView(model: VideoPostModel(name: "First Last", date: "Month 00 at 00:00", video: "SampleImage", caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."))
 }
