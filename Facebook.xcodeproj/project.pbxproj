@@ -46,7 +46,6 @@
 		B9EA10032A92DCDF00A30CB4 /* ReactionGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA10022A92DCDF00A30CB4 /* ReactionGroupView.swift */; };
 		B9EA10062A92DEB300A30CB4 /* AddIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA10052A92DEB300A30CB4 /* AddIndicatorView.swift */; };
 		B9EA100A2A92E64400A30CB4 /* ReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA10092A92E64400A30CB4 /* ReelsView.swift */; };
-		B9EA100D2A92EA0C00A30CB4 /* ReelsReactionGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA100C2A92EA0C00A30CB4 /* ReelsReactionGroupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,7 +90,6 @@
 		B9EA10022A92DCDF00A30CB4 /* ReactionGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionGroupView.swift; sourceTree = "<group>"; };
 		B9EA10052A92DEB300A30CB4 /* AddIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIndicatorView.swift; sourceTree = "<group>"; };
 		B9EA10092A92E64400A30CB4 /* ReelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsView.swift; sourceTree = "<group>"; };
-		B9EA100C2A92EA0C00A30CB4 /* ReelsReactionGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsReactionGroupView.swift; sourceTree = "<group>"; };
 		B9EA100E2A92F81C00A30CB4 /* Facebook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Facebook.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -342,7 +340,6 @@
 			children = (
 				B9ACB4872A91AE1E0040ED4A /* ReactionPill */,
 				B9EA10022A92DCDF00A30CB4 /* ReactionGroupView.swift */,
-				B9EA100C2A92EA0C00A30CB4 /* ReelsReactionGroupView.swift */,
 			);
 			path = ReactionGroup;
 			sourceTree = "<group>";
@@ -430,7 +427,6 @@
 				B92DEC352A92980000D6400F /* TabsModel.swift in Sources */,
 				B9EA100A2A92E64400A30CB4 /* ReelsView.swift in Sources */,
 				B93F54AB2A927D9E00857CA5 /* MenuView.swift in Sources */,
-				B9EA100D2A92EA0C00A30CB4 /* ReelsReactionGroupView.swift in Sources */,
 				B90CAC6D2A94029C006B5AB9 /* ReelPostModel.swift in Sources */,
 				B9D3C1C92A91A37A00680596 /* HeaderView.swift in Sources */,
 				B90CAC6B2A94026D006B5AB9 /* ReelPostView.swift in Sources */,

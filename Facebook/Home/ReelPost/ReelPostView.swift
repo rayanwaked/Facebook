@@ -34,9 +34,9 @@ struct ReelPostView: View {
                 
                 Spacer()
                 
-                VStack {
-                    ReelsReactionGroupView()
-                }
+                ReactionGroupView()
+                .frame(height: 20)
+                .padding(.bottom)
             }
             .padding()
         }
