@@ -17,25 +17,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="FacebookLaunchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Wmi-lt-Dy5">
-                                <rect key="frame" x="132" y="362" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="FacebookLaunchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Wmi-lt-Dy5">
+                                <rect key="frame" x="132.66666666666666" y="362" width="127.99999999999997" height="128"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="MetaLaunchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="NoT-tE-uXv">
-                                <rect key="frame" x="155" y="724" width="82" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="from" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HoT-AZ-jQI">
-                                <rect key="frame" x="176" y="740" width="41" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smJ-FA-72H">
+                                <rect key="frame" x="181" y="742.66666666666663" width="31" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="MetaLaunchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="5wu-FK-98a">
+                                <rect key="frame" x="155.66666666666666" y="761" width="82" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="M5D-V0-EZs"/>
+                                    <constraint firstAttribute="height" constant="28" id="TV3-bg-CAW"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="oII-xW-dj0"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wmi-lt-Dy5" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Fof-Rp-46l"/>
+                            <constraint firstItem="5wu-FK-98a" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="349" id="Ft0-oj-dAe"/>
+                            <constraint firstItem="smJ-FA-72H" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="MEh-y6-rDx"/>
+                            <constraint firstItem="5wu-FK-98a" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="VK9-KX-psM"/>
+                            <constraint firstItem="Wmi-lt-Dy5" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Wgo-ek-ag1"/>
+                            <constraint firstItem="smJ-FA-72H" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="325" id="apB-Ol-DwA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -46,8 +55,8 @@
     <resources>
         <image name="FacebookLaunchLogo" width="128" height="128"/>
         <image name="MetaLaunchLogo" width="636" height="128"/>
-        <systemColor name="scrollViewTexturedBackgroundColor">
-            <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
