@@ -10,7 +10,6 @@ import SwiftUI
 struct HomeView: View {
     @StateObject var tabsModel = TabsModel()
     @State private var isRefreshing = false
-    let borderPadding = CGFloat(16)
     
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -27,7 +26,7 @@ struct HomeView: View {
                 .padding(.bottom, 2)
             
             //MARK: Tabs
-            StoriesView()
+            StoriesView(model: ProfileButtonModel(width: 40, height: 40, story: false))
             
             Divider()
                 .padding(.top, -2)

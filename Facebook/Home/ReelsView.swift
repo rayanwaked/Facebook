@@ -17,7 +17,7 @@ struct ReelsView: View {
             
             VStack {
                 HStack {
-                    ProfileButtonView(model: ProfileButtonModel(width: 40, height: 40))
+                    ProfileButtonView(model: ProfileButtonModel(width: 40, height: 40, story: false))
                     VStack(alignment: .leading) {
                         Text("First Last")
                             .font(.body)
@@ -40,7 +40,7 @@ struct ReelsView: View {
         }
         .frame(maxWidth: .infinity)
         .frame(height: 700)
-        .padding([.leading, .trailing], -16)
+        .padding([.leading, .trailing], -borderPadding)
     }
 }
 

@@ -8,13 +8,11 @@
 import SwiftUI
 
 struct VideosView: View {
-    let borderPadding = CGFloat(16)
-    
     var body: some View {
         VStack(alignment: .leading) {
             //MARK: Post Information
             HStack {
-                ProfileButtonView(model: ProfileButtonModel(width: 40, height: 40))
+                ProfileButtonView(model: ProfileButtonModel(width: 40, height: 40, story: false))
                 VStack(alignment: .leading) {
                     Text("First Last")
                         .font(.body)
@@ -36,7 +34,7 @@ struct VideosView: View {
                 .resizable()
                 .frame(height: 250)
                 .padding([.top, .bottom], 5)
-                .padding([.leading, .trailing], -16)
+                .padding([.leading, .trailing], -borderPadding)
             
             Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
                 .lineSpacing(2)

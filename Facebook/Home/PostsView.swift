@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct PostsView: View {
-    let borderPadding = CGFloat(16)
     
     var body: some View {
         VStack(alignment: .leading) {
             //MARK: Post Information
             HStack {
-                ProfileButtonView(model: ProfileButtonModel(width: 40, height: 40))
+                ProfileButtonView(model: ProfileButtonModel(width: 40, height: 40, story: false))
                 VStack(alignment: .leading) {
                     Text("First Last")
                         .font(.body)
@@ -39,7 +38,7 @@ struct PostsView: View {
             Image("SampleImage")
                 .resizable()
                 .frame(height: 400)
-                .padding([.leading, .trailing], -18)
+                .padding([.leading, .trailing], -borderPadding)
             
             //MARK: Post Interactions
             ReactionGroupView()

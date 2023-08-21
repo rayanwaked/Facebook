@@ -11,7 +11,7 @@ struct AddIndicatorView: View {
     var body: some View {
         ZStack {
             Circle()
-                .frame(width: 24)
+                .frame(width: 22)
                 .foregroundStyle(Color("Background"))
             Circle()
                 .frame(width: 18)

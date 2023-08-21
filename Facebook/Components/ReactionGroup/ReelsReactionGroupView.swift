@@ -7,20 +7,16 @@
 
 import SwiftUI
 
-struct ReelsReactionGroupView: View {
-    var borderPadding = CGFloat(16)
-    
+struct ReelsReactionGroupView: View {    
     var body: some View {
         HStack(alignment: .bottom) {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ReactionPillView(model: ReactionPillModel(imageName: "Like", label: "000"))
-                    ReactionPillView(model: ReactionPillModel(imageName: "Laugh", label: "000"))
-                    ReactionPillView(model: ReactionPillModel(imageName: "Hate", label: "000"))
-                    
                     ReactionPillView(model: ReactionPillModel(imageName: "Love", label: "000"))
-                    
-                    ReactionPillView(model: ReactionPillModel(imageName: "SmileAddRound", label: "Add"))
+                    ReactionPillView(model: ReactionPillModel(imageName: "Laugh", label: "000"))
+                    ReactionPillView(model: ReactionPillModel(imageName: "Hug", label: "000"))
+                    ReactionPillView(model: ReactionPillModel(imageName: "Hate", label: "000"))
                 }
                 .padding([.leading, .trailing], borderPadding)
             }

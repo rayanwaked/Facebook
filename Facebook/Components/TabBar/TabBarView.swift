@@ -32,7 +32,7 @@ struct TabBarView: View {
                 {tabBarViewModel.appPage = 4}
         }
         .frame(maxWidth: .infinity, maxHeight: 40)
-        .padding([.leading, .trailing], 32)
+        .padding([.leading, .trailing], 28)
         .background(Color("Background"))
     }
 }

@@ -8,6 +8,8 @@
 import SwiftUI
 import SwiftData
 
+public let borderPadding = CGFloat(14)
+
 @main
 struct FacebookApp: App {
     @StateObject var tabBarViewModel = TabBarViewModel()

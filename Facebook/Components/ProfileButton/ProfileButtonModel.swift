@@ -10,4 +10,5 @@ import Foundation
 struct ProfileButtonModel {
     var width: CGFloat
     var height: CGFloat
+    var story: Bool
 }
