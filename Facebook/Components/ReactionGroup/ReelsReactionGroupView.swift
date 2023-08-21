@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ReelsReactionGroupView: View {
-    var borderPadding = CGFloat(18)
+    var borderPadding = CGFloat(16)
     
     var body: some View {
         HStack(alignment: .bottom) {

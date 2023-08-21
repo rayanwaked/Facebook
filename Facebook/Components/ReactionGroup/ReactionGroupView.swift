@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ReactionGroupView: View {
-    var borderPadding = CGFloat(18)
+    var borderPadding = CGFloat(16)
     
     var body: some View {
         HStack {
@@ -27,23 +27,25 @@ struct ReactionGroupView: View {
             .clipShape(RoundedRectangle(cornerRadius: 25))
              
             HStack {
-                ProfileButtonView(model: ProfileButtonModel(width: 30, height: 30))
-                ProfileButtonView(model: ProfileButtonModel(width: 30, height: 30))
-                    .padding(.leading, -15)
-                ProfileButtonView(model: ProfileButtonModel(width: 30, height: 30))
-                    .padding(.leading, -15)
+                ReactionPillView(model: ReactionPillModel(imageName: "CommentsFilled2", label: ""))
+                ReactionPillView(model: ReactionPillModel(imageName: "SendFilled2", label: ""))
+//                ProfileButtonView(model: ProfileButtonModel(width: 30, height: 30))
+//                ProfileButtonView(model: ProfileButtonModel(width: 30, height: 30))
+//                    .padding(.leading, -15)
+//                ProfileButtonView(model: ProfileButtonModel(width: 30, height: 30))
+//                    .padding(.leading, -15)
             }
         }
         .padding(.leading, -borderPadding)
         
-        HStack {
-            Spacer()
-            
-            TextButtonView(model: TextButtonModel(text: "00 Comments", fontSize: Font.body, fontWeight: .regular, fontColor: Color.gray))
-            {print("Open Comments")}
-            TextButtonView(model: TextButtonModel(text: "00 Shares", fontSize: Font.body, fontWeight: .regular, fontColor: Color.gray))
-            {print("Open Sharesheet")}
-        }
+//        HStack {
+//            Spacer()
+//            
+//            TextButtonView(model: TextButtonModel(text: "00 Comments", fontSize: Font.body, fontWeight: .regular, fontColor: Color.gray))
+//            {print("Open Comments")}
+//            TextButtonView(model: TextButtonModel(text: "00 Shares", fontSize: Font.body, fontWeight: .regular, fontColor: Color.gray))
+//            {print("Open Sharesheet")}
+//        }
     }
 }
 

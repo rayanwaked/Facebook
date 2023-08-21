@@ -1,13 +1,13 @@
 //
-//  PostsView.swift
+//  ViewsView.swift
 //  Facebook
 //
-//  Created by Rayan Waked on 8/19/23.
+//  Created by Rayan Waked on 8/20/23.
 //
 
 import SwiftUI
 
-struct PostsView: View {
+struct VideosView: View {
     let borderPadding = CGFloat(16)
     
     var body: some View {
@@ -32,14 +32,15 @@ struct PostsView: View {
 
             
             //MARK: Post Content
+            Image("SampleImage")
+                .resizable()
+                .frame(height: 250)
+                .padding([.top, .bottom], 5)
+                .padding([.leading, .trailing], -16)
+            
             Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
                 .lineSpacing(2)
                 .font(.body)
-            
-            Image("SampleImage")
-                .resizable()
-                .frame(height: 400)
-                .padding([.leading, .trailing], -18)
             
             //MARK: Post Interactions
             ReactionGroupView()
@@ -47,6 +48,6 @@ struct PostsView: View {
     }
 }
 
-#Preview("Posts View") {
-    PostsView()
+#Preview("Videos View"){
+    VideosView()
 }

@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @StateObject var tabsModel = TabsModel()
     @State private var isRefreshing = false
-    let borderPadding = CGFloat(18)
+    let borderPadding = CGFloat(16)
     
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -24,19 +24,19 @@ struct HomeView: View {
                 .padding(.top, 5)
             
             Divider()
-                .padding([.top, .bottom], 10)
+                .padding(.bottom, 2)
             
             //MARK: Tabs
             StoriesView()
             
             Divider()
-                .padding(.top, 5)
-                .padding(.bottom, 10)
+                .padding(.top, -2)
+                .padding(.bottom, 2)
             
             //MARK: Stories
             TabsView()
                 .padding([.leading, .trailing], borderPadding)
-                .padding(.bottom, -5)
+                .padding(.bottom, -10)
                 .environmentObject(tabsModel)
             
             //MARK: Content
@@ -44,11 +44,10 @@ struct HomeView: View {
                 switch tabsModel.currentTab {
                 case 0: PostsView()
                 case 1: ReelsView()
-                case 2: Text("Watch")
+                case 2: VideosView()
                 default: PostsView()
                 }
             }
-            .frame(maxHeight: 600)
             .padding(borderPadding)
             .padding(.bottom, borderPadding)
         }

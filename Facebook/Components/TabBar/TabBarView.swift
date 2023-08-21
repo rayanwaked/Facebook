@@ -11,6 +11,7 @@ struct TabBarView: View {
     @EnvironmentObject var tabBarViewModel: TabBarViewModel
     
     var body: some View {
+        Divider()
         HStack(spacing: 20) {
             IconButtonView(model: tabBarViewModel.appPage == 0 ? IconButtonModel(imageName: "HomeFilled") : IconButtonModel(imageName: "HomeRound")) {tabBarViewModel.appPage = 0}
             Spacer()
@@ -30,8 +31,8 @@ struct TabBarView: View {
             IconButtonView(model: tabBarViewModel.appPage == 4 ? IconButtonModel(imageName: "UserFilled") : IconButtonModel(imageName: "UserRound"))
                 {tabBarViewModel.appPage = 4}
         }
-        .frame(maxWidth: .infinity, maxHeight: 50)
-        .padding([.leading, .trailing], 35)
+        .frame(maxWidth: .infinity, maxHeight: 40)
+        .padding([.leading, .trailing], 32)
         .background(Color("Background"))
     }
 }

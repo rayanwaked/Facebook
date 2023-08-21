@@ -16,12 +16,13 @@ struct StoriesView: View {
                         ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55))
                         AddIndicatorView()
                     }
+                    .padding(.bottom, -4)
                     Text("You")
                         .foregroundStyle(.gray)
                         .font(Font.subheadline)
                 }
             }
-            .padding([.leading, .trailing], 18)
+            .padding([.leading, .trailing], 16)
         }
 
     }

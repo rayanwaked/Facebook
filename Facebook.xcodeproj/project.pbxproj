@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B90A814A2A93189600AC9970 /* VideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90A81492A93189600AC9970 /* VideosView.swift */; };
 		B92DEC352A92980000D6400F /* TabsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DEC342A92980000D6400F /* TabsModel.swift */; };
 		B93F54A52A927D7A00857CA5 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93F54A42A927D7A00857CA5 /* NotificationView.swift */; };
 		B93F54A72A927D8000857CA5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93F54A62A927D8000857CA5 /* ProfileView.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B90A81492A93189600AC9970 /* VideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosView.swift; sourceTree = "<group>"; };
 		B92DEC342A92980000D6400F /* TabsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsModel.swift; sourceTree = "<group>"; };
 		B93F54A42A927D7A00857CA5 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		B93F54A62A927D8000857CA5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				B92DEC332A9297F500D6400F /* Tabs */,
 				B9D3C1CB2A91A3F300680596 /* PostsView.swift */,
 				B9EA10092A92E64400A30CB4 /* ReelsView.swift */,
+				B90A81492A93189600AC9970 /* VideosView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				B95ED2B42A8FE552002A6DE4 /* HomeView.swift in Sources */,
 				B95ED2EE2A901E70002A6DE4 /* ActionBarView.swift in Sources */,
 				B95ED3032A902135002A6DE4 /* IconButtonView.swift in Sources */,
+				B90A814A2A93189600AC9970 /* VideosView.swift in Sources */,
 				B9ACB4892A91AE290040ED4A /* ReactionPillView.swift in Sources */,
 				B95ED3072A902149002A6DE4 /* IconButtonModel.swift in Sources */,
 				B9ACB4922A91C30D0040ED4A /* TextButtonModel.swift in Sources */,

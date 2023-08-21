@@ -12,8 +12,7 @@ struct ReelsView: View {
         ZStack(alignment: .topLeading) {
             Image("SampleImage")
                 .resizable()
-                .frame(height: 600)
-                .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
+                .frame(height: 700)
                 .padding(.top, 5)
             
             VStack {
@@ -40,8 +39,8 @@ struct ReelsView: View {
             .padding()
         }
         .frame(maxWidth: .infinity)
-        .frame(height: 600)
-        .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
+        .frame(height: 700)
+        .padding([.leading, .trailing], -16)
     }
 }
 

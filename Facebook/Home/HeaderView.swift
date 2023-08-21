@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HeaderView: View {
-    let borderPadding = CGFloat(18)
+    let borderPadding = CGFloat(16)
     
     var body: some View {
         VStack {
