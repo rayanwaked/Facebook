@@ -10,11 +10,18 @@ import SwiftUI
 struct MenuView: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
-            Text("Menu")
+            VStack {
+                Text("Good Morning, First!")
+                    .font(.system(size: 32))
+                    .fontWeight(.bold)
+                    .foregroundStyle(Color.blue)
+                    .padding(.top, 20)
+            }
+            .padding(borderPadding)
         }
     }
 }
 
-#Preview {
+#Preview("Menu View") {
     MenuView()
 }

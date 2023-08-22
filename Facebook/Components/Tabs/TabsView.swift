@@ -17,7 +17,7 @@ struct TabsView: View {
                 fontSize: tabsModel.currentTab == 0 ? Font.title2 : Font.title3,
                 fontWeight: tabsModel.currentTab == 0 ? .bold : .semibold,
                 fontColor: tabsModel.currentTab == 0 ? Color.blue : Color.primary)) {
-                tabsModel.currentTab = 0
+                    tabsModel.currentTab = 0
             }
             
             TextButtonView(model: TextButtonModel(
@@ -25,8 +25,23 @@ struct TabsView: View {
                 fontSize: tabsModel.currentTab == 1 ? Font.title2 : Font.title3,
                 fontWeight: tabsModel.currentTab == 1 ? .bold : .semibold,
                 fontColor: tabsModel.currentTab == 1 ? Color.blue : Color.primary)) {
-                tabsModel.currentTab = 1
+                    tabsModel.currentTab = 1
+                    tabsModel.showModal = true
             }
+                .fullScreenCover(isPresented: $tabsModel.showModal) {
+                    ZStack(alignment: .topTrailing) {
+                        ReelPostView(model: ReelPostModel(name: "First Last", date: "Month 00 at 00:00", reel: "SampleImage", caption: "Lorem ipsum dolor set amet"))
+                        
+                        IconButtonView(model: IconButtonModel(imageName: "ReelsHomeRound")) {
+                            tabsModel.showModal = false
+                        }
+                        .padding(.top, borderPadding * 4)
+                        .padding(.trailing, borderPadding)
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .ignoresSafeArea(.all)
+                    .background(Color.black)
+                }
             
             TextButtonView(model: TextButtonModel(
                 text: "Videos",

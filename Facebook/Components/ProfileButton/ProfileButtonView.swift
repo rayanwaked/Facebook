@@ -15,12 +15,16 @@ struct ProfileButtonView: View {
         Button(action: {
             profileButtonTappedAction?()
         }) {
-            Circle()
-                .stroke(model.story == true ? Color.blue : Color.clear, lineWidth: 4)
-                .asyncImageModifier()
+            ZStack {
+                Circle()
+                    .stroke(model.story == true ? Color.blue : Color.clear, lineWidth: 7)
+                    .asyncImageModifier()
+                Circle()
+                    .stroke(model.story == true ? Color("Background") : Color.clear, lineWidth: 2)
+            }
         }
         .accentColor(.gray)
-        .frame(width: model.width, height: model.height+4)
+        .frame(width: model.width, height: model.height+7)
     }
 }
 

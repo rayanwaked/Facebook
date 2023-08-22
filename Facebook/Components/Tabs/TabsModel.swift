@@ -9,5 +9,5 @@ import Foundation
 
 class TabsModel: ObservableObject {
     @Published var currentTab = 0
+    @Published var showModal = false
 }
-

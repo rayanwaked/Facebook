@@ -50,7 +50,6 @@ struct HomeView: View {
             .padding(borderPadding)
             .padding(.bottom, borderPadding)
         }
-        .contentShape(Rectangle())
         .refreshable {
             await refreshData()
             print("refreshed")
@@ -59,7 +58,11 @@ struct HomeView: View {
     
     func refreshData() async {
         isRefreshing = true
-        await Task.sleep(2 * 1_000_000_000) // Simulate a 2-second refresh
+        do {
+            try await Task.sleep(nanoseconds: 2 * 1_000_000_000)
+        } catch {
+            //Catch error
+        }
         isRefreshing = false
     }
 }

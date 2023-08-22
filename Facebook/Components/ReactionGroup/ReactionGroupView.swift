@@ -28,7 +28,6 @@ struct ReactionGroupView: View {
             }
             .clipShape(RoundedRectangle(cornerRadius: 25))
         }
-        .padding(.trailing, -borderPadding)
     }
 }
 

@@ -10,11 +10,18 @@ import SwiftUI
 struct NotificationView: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
-            Text("Notification")
+            VStack {
+                Text("Notifications")
+                    .font(.system(size: 32))
+                    .fontWeight(.bold)
+                    .foregroundStyle(Color.blue)
+                    .padding(.top, 16)
+            }
+            .padding(borderPadding)
         }
     }
 }
 
-#Preview {
+#Preview("Nofication View") {
     NotificationView()
 }

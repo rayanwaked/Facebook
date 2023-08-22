@@ -14,8 +14,7 @@ struct ReelPostView: View {
         ZStack(alignment: .topLeading) {
             Image(model.reel)
                 .resizable()
-                .frame(height: UIScreen.main.bounds.height * 0.9)
-                .modifier(FullScreenModifier())
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             
             VStack {
                 HStack {
@@ -38,12 +37,11 @@ struct ReelPostView: View {
                 .frame(height: 20)
                 .padding(.bottom)
             }
-            .padding()
+            .padding(borderPadding)
+            .padding([.top, .bottom], borderPadding * 2.5)
         }
-        .frame(maxWidth: .infinity)
-        .frame(height: UIScreen.main.bounds.height * 0.9)
-        .padding([.leading, .trailing], -borderPadding)
-        .padding(.bottom, -8)
+        .ignoresSafeArea(.all)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
