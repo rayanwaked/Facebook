@@ -29,16 +29,7 @@ struct TabsView: View {
                     tabsModel.showModal = true
             }
                 .fullScreenCover(isPresented: $tabsModel.showModal) {
-                    ZStack(alignment: .topTrailing) {
-                        ReelPostView(model: ReelPostModel(name: "First Last", date: "Month 00 at 00:00", reel: "SampleImage", caption: "Lorem ipsum dolor set amet"))
-                        
-                        IconButtonView(model: IconButtonModel(imageName: "ReelsHomeRound")) {
-                            tabsModel.showModal = false
-                        }
-                        .padding(.top, borderPadding * 4)
-                        .padding(.trailing, borderPadding)
-                    }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                ReelPostView(model: ReelPostModel(name: "First Last", date: "Month 00 at 00:00", reel: "SampleImage", caption: "Lorem ipsum dolor set amet"))
                     .ignoresSafeArea(.all)
                     .background(Color.black)
                 }

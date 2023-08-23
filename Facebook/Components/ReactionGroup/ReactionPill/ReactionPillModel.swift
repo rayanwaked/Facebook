@@ -10,4 +10,5 @@ import Foundation
 struct ReactionPillModel {
     var imageName: String
     var label: String
+    var size: CGFloat
 }

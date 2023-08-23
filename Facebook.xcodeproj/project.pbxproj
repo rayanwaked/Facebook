@@ -31,6 +31,7 @@
 		B95ED2FE2A90209B002A6DE4 /* ActionBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95ED2FD2A90209B002A6DE4 /* ActionBarModel.swift */; };
 		B95ED3032A902135002A6DE4 /* IconButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95ED3022A902135002A6DE4 /* IconButtonView.swift */; };
 		B95ED3072A902149002A6DE4 /* IconButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95ED3062A902149002A6DE4 /* IconButtonModel.swift */; };
+		B96F9A3B2A95B9B400F2D1F4 /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96F9A3A2A95B9B400F2D1F4 /* LineShape.swift */; };
 		B9ACB4892A91AE290040ED4A /* ReactionPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ACB4882A91AE290040ED4A /* ReactionPillView.swift */; };
 		B9ACB48B2A91AE4A0040ED4A /* ReactionPillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ACB48A2A91AE4A0040ED4A /* ReactionPillModel.swift */; };
 		B9ACB48D2A91B37F0040ED4A /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ACB48C2A91B37F0040ED4A /* TabBarModel.swift */; };
@@ -39,6 +40,7 @@
 		B9C3AE9D2A92B3200002A823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9C3AE9C2A92B3200002A823 /* LaunchScreen.storyboard */; };
 		B9C415FF2A955AF1001319B4 /* ReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C415FE2A955AF1001319B4 /* ReelsView.swift */; };
 		B9C416012A95711C001319B4 /* ReelsCodeDump.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C416002A95711C001319B4 /* ReelsCodeDump.swift */; };
+		B9C416032A95A276001319B4 /* ReelsReactionGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C416022A95A276001319B4 /* ReelsReactionGroupView.swift */; };
 		B9D3C1C32A91A30100680596 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D3C1C22A91A30100680596 /* StoriesView.swift */; };
 		B9D3C1C62A91A35A00680596 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D3C1C52A91A35A00680596 /* TabsView.swift */; };
 		B9D3C1C92A91A37A00680596 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D3C1C82A91A37A00680596 /* HeaderView.swift */; };
@@ -74,6 +76,7 @@
 		B95ED2FD2A90209B002A6DE4 /* ActionBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionBarModel.swift; sourceTree = "<group>"; };
 		B95ED3022A902135002A6DE4 /* IconButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButtonView.swift; sourceTree = "<group>"; };
 		B95ED3062A902149002A6DE4 /* IconButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButtonModel.swift; sourceTree = "<group>"; };
+		B96F9A3A2A95B9B400F2D1F4 /* LineShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineShape.swift; sourceTree = "<group>"; };
 		B9ACB4882A91AE290040ED4A /* ReactionPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionPillView.swift; sourceTree = "<group>"; };
 		B9ACB48A2A91AE4A0040ED4A /* ReactionPillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionPillModel.swift; sourceTree = "<group>"; };
 		B9ACB48C2A91B37F0040ED4A /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
@@ -82,6 +85,7 @@
 		B9C3AE9C2A92B3200002A823 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9C415FE2A955AF1001319B4 /* ReelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsView.swift; sourceTree = "<group>"; };
 		B9C416002A95711C001319B4 /* ReelsCodeDump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCodeDump.swift; sourceTree = "<group>"; };
+		B9C416022A95A276001319B4 /* ReelsReactionGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsReactionGroupView.swift; sourceTree = "<group>"; };
 		B9C714D72A92AF9F0066078F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B9D3C1C22A91A30100680596 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
 		B9D3C1C52A91A35A00680596 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
@@ -267,6 +271,7 @@
 				B95ED2FA2A90205D002A6DE4 /* ActionBar */,
 				B9ACB4902A91C2F20040ED4A /* TextButton */,
 				B95ED3012A902127002A6DE4 /* IconButton */,
+				B96F9A392A95B9A200F2D1F4 /* LineShape */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -307,6 +312,14 @@
 			path = IconButton;
 			sourceTree = "<group>";
 		};
+		B96F9A392A95B9A200F2D1F4 /* LineShape */ = {
+			isa = PBXGroup;
+			children = (
+				B96F9A3A2A95B9B400F2D1F4 /* LineShape.swift */,
+			);
+			path = LineShape;
+			sourceTree = "<group>";
+		};
 		B9ACB4872A91AE1E0040ED4A /* ReactionPill */ = {
 			isa = PBXGroup;
 			children = (
@@ -340,6 +353,7 @@
 			children = (
 				B9ACB4872A91AE1E0040ED4A /* ReactionPill */,
 				B9EA10022A92DCDF00A30CB4 /* ReactionGroupView.swift */,
+				B9C416022A95A276001319B4 /* ReelsReactionGroupView.swift */,
 			);
 			path = ReactionGroup;
 			sourceTree = "<group>";
@@ -444,11 +458,13 @@
 				B95ED2FE2A90209B002A6DE4 /* ActionBarModel.swift in Sources */,
 				B9D3C1CC2A91A3F300680596 /* PostsView.swift in Sources */,
 				B9EA10062A92DEB300A30CB4 /* AddIndicatorView.swift in Sources */,
+				B96F9A3B2A95B9B400F2D1F4 /* LineShape.swift in Sources */,
 				B95ED2EC2A901C21002A6DE4 /* ProfileButtonView.swift in Sources */,
 				B9ACB4952A91C31C0040ED4A /* TextButtonView.swift in Sources */,
 				B90CAC652A93F9C1006B5AB9 /* ImagePostView.swift in Sources */,
 				B9ACB48D2A91B37F0040ED4A /* TabBarModel.swift in Sources */,
 				B95ED2B42A8FE552002A6DE4 /* HomeView.swift in Sources */,
+				B9C416032A95A276001319B4 /* ReelsReactionGroupView.swift in Sources */,
 				B95ED2EE2A901E70002A6DE4 /* ActionBarView.swift in Sources */,
 				B95ED3032A902135002A6DE4 /* IconButtonView.swift in Sources */,
 				B90A814A2A93189600AC9970 /* VideosView.swift in Sources */,

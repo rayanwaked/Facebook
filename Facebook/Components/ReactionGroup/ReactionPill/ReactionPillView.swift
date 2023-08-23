@@ -18,7 +18,7 @@ struct ReactionPillView: View {
             HStack(alignment: .center) {
                 Image(model.imageName)
                     .resizable()
-                    .frame(width: 20, height: 20)
+                    .frame(width: model.size, height: model.size)
                 if !model.label.isEmpty {
                     Text(model.label)
                         .font(.callout)
@@ -34,5 +34,5 @@ struct ReactionPillView: View {
 }
 
 #Preview("Reaction Pill View") {
-    ReactionPillView(model: ReactionPillModel(imageName: "Like", label: "123"))
+    ReactionPillView(model: ReactionPillModel(imageName: "Like", label: "123", size: 20))
 }
