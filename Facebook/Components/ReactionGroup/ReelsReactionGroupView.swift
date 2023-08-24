@@ -8,23 +8,17 @@
 import SwiftUI
 
 struct ReelsReactionGroupView: View {
+    @EnvironmentObject var tabsModel: TabsModel
+    
     var body: some View {
-        HStack {
-            HStack {
-                ReactionPillView(model: ReactionPillModel(imageName: "CommentsFilled2", label: "", size: 26))
-                ReactionPillView(model: ReactionPillModel(imageName: "SendFilled2", label: "", size: 26))
+        VStack {
+            ReactionPillView(model: ReactionPillModel(imageName: "Love", label: "", size: 30))
+            ReactionPillView(model: ReactionPillModel(imageName: "CommentsFilled2", label: "", size: 30))
+            ReactionPillView(model: ReactionPillModel(imageName: "SaveFilled2", label: "", size: 30))
+            ReactionPillView(model: ReactionPillModel(imageName: "SendFilled2", label: "", size: 30))
+            ReactionPillView(model: ReactionPillModel(imageName: "ReelsHomeFilled", label: "", size: 30)) {
+                tabsModel.showModal = false
             }
-            
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
-                    ReactionPillView(model: ReactionPillModel(imageName: "Like", label: "000", size: 26))
-                    ReactionPillView(model: ReactionPillModel(imageName: "Love", label: "000", size: 26))
-                    ReactionPillView(model: ReactionPillModel(imageName: "Laugh", label: "000", size: 26))
-                    ReactionPillView(model: ReactionPillModel(imageName: "Hug", label: "000", size: 26))
-                    ReactionPillView(model: ReactionPillModel(imageName: "Hate", label: "000", size: 26))
-                }
-            }
-            .clipShape(RoundedRectangle(cornerRadius: 25))
         }
     }
 }

@@ -43,7 +43,7 @@ struct ImagePostView: View {
             
             //MARK: Post Interactions
             ReactionGroupView()
-                .padding(.bottom, borderPadding/1.25)
+                .padding(.bottom, borderPadding * 1.1)
         }
     }
 }

@@ -44,9 +44,7 @@ struct VideoPostView: View {
             
             //MARK: Post Interactions
             ReactionGroupView()
-            
-            Divider()
-                .padding(borderPadding/1.5)
+                .padding(.bottom, borderPadding * 1.1)
         }
     }
 }

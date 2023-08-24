@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ReelPostModel {
+struct ReelPostModel: Hashable {
     var name: String
     var date: String
     var reel: String

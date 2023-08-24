@@ -30,8 +30,6 @@ struct TabsView: View {
             }
                 .fullScreenCover(isPresented: $tabsModel.showModal) {
                 ReelPostView(model: ReelPostModel(name: "First Last", date: "Month 00 at 00:00", reel: "SampleImage", caption: "Lorem ipsum dolor set amet"))
-                    .ignoresSafeArea(.all)
-                    .background(Color.black)
                 }
             
             TextButtonView(model: TextButtonModel(

@@ -16,9 +16,7 @@ struct StoriesView: View {
                 VStack {
                     ZStack(alignment: .bottomTrailing) {
                         ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55, story: false))
-                        if model.story == false {
                             AddIndicatorView()
-                        }
                     }
                     .padding(.bottom, -4)
                     Text("You")
