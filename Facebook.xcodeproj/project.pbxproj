@@ -40,7 +40,6 @@
 		B9ACB4952A91C31C0040ED4A /* TextButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ACB4942A91C31C0040ED4A /* TextButtonView.swift */; };
 		B9C3AE9D2A92B3200002A823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9C3AE9C2A92B3200002A823 /* LaunchScreen.storyboard */; };
 		B9C415FF2A955AF1001319B4 /* ReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C415FE2A955AF1001319B4 /* ReelsView.swift */; };
-		B9C416012A95711C001319B4 /* ReelsCodeDump.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C416002A95711C001319B4 /* ReelsCodeDump.swift */; };
 		B9C416032A95A276001319B4 /* ReelsReactionGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C416022A95A276001319B4 /* ReelsReactionGroupView.swift */; };
 		B9D3C1C32A91A30100680596 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D3C1C22A91A30100680596 /* StoriesView.swift */; };
 		B9D3C1C62A91A35A00680596 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D3C1C52A91A35A00680596 /* TabsView.swift */; };
@@ -88,7 +87,6 @@
 		B9ACB4942A91C31C0040ED4A /* TextButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonView.swift; sourceTree = "<group>"; };
 		B9C3AE9C2A92B3200002A823 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9C415FE2A955AF1001319B4 /* ReelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsView.swift; sourceTree = "<group>"; };
-		B9C416002A95711C001319B4 /* ReelsCodeDump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCodeDump.swift; sourceTree = "<group>"; };
 		B9C416022A95A276001319B4 /* ReelsReactionGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsReactionGroupView.swift; sourceTree = "<group>"; };
 		B9C714D72A92AF9F0066078F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B9D3C1C22A91A30100680596 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
@@ -126,6 +124,7 @@
 		B90CAC692A94025D006B5AB9 /* ReelPost */ = {
 			isa = PBXGroup;
 			children = (
+				B9F64FE92A96DB8A00EBF493 /* DeviceModel */,
 				B90CAC6C2A94029C006B5AB9 /* ReelPostModel.swift */,
 				B90CAC6A2A94026D006B5AB9 /* ReelPostView.swift */,
 				B9FE647B2A969C420042D132 /* ReelHeaderView.swift */,
@@ -183,8 +182,6 @@
 				B95ED2C92A8FE975002A6DE4 /* Message */,
 				B95ED2CB2A8FE97C002A6DE4 /* Notification */,
 				B95ED2CA2A8FE979002A6DE4 /* Profile */,
-				B9C416002A95711C001319B4 /* ReelsCodeDump.swift */,
-				B927A8072A96CE0F008BDFB1 /* GetDeviceModel.swift */,
 			);
 			path = Facebook;
 			sourceTree = "<group>";
@@ -375,6 +372,14 @@
 			path = AddIndicator;
 			sourceTree = "<group>";
 		};
+		B9F64FE92A96DB8A00EBF493 /* DeviceModel */ = {
+			isa = PBXGroup;
+			children = (
+				B927A8072A96CE0F008BDFB1 /* GetDeviceModel.swift */,
+			);
+			path = DeviceModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -488,7 +493,6 @@
 				B9ACB48B2A91AE4A0040ED4A /* ReactionPillModel.swift in Sources */,
 				B9FE647C2A969C420042D132 /* ReelHeaderView.swift in Sources */,
 				B95ED2EA2A901BD4002A6DE4 /* LogoView.swift in Sources */,
-				B9C416012A95711C001319B4 /* ReelsCodeDump.swift in Sources */,
 				B93F54A72A927D8000857CA5 /* ProfileView.swift in Sources */,
 				B95ED2B22A8FE552002A6DE4 /* FacebookApp.swift in Sources */,
 			);
@@ -635,6 +639,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -647,7 +652,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Waked.Facebook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -674,6 +679,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -686,7 +692,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Waked.Facebook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

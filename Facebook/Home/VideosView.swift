@@ -19,7 +19,7 @@ struct VideosView: View {
                 name: "First Last",
                 date: "Month 00 at 00:00",
                 video: "SampleImage",
-                caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."))
+                caption: ""))
         }
     }
 }

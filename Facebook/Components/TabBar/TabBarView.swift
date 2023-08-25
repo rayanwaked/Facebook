@@ -33,6 +33,7 @@ struct TabBarView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: 40)
             .padding([.leading, .trailing], 28)
+            .padding(.top, 8)
             .background(Color("Background"))
             
             LineShape()

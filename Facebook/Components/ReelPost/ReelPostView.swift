@@ -36,6 +36,7 @@ struct ReelPostView: View {
         // Fix does not work on simulator or preview
         .padding(.trailing, UIDevice.isiPhone ? UIScreen.main.bounds.width * -0.017 : UIScreen.main.bounds.width * -0.003)
         .padding(.trailing, deviceType.contains("Plus") || deviceType.contains("Max") ? UIScreen.main.bounds.width * -0.012 : UIScreen.main.bounds.width * -0.00)
+        .background(Color.black)
     }
 }
 
