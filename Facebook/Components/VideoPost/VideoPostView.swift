@@ -39,7 +39,7 @@ struct VideoPostView: View {
                 .padding([.leading, .trailing], -borderPadding)
             
             Text(model.caption)
-                .lineSpacing(2)
+                .lineSpacing(1)
                 .font(.body)
             
             //MARK: Post Interactions

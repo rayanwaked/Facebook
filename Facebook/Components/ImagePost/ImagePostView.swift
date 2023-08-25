@@ -33,7 +33,7 @@ struct ImagePostView: View {
             
             //MARK: Post Content
             Text(model.caption)
-                .lineSpacing(2)
+                .lineSpacing(1)
                 .font(.body)
             
             Image(model.image)

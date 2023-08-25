@@ -38,7 +38,7 @@ struct TabBarView: View {
             .background(Color("Background"))
             
             LineShape()
-                .stroke(Color.gray.opacity(0.2), lineWidth: 0.5)
+                .stroke(Color.gray.opacity(0.25), lineWidth: 0.5)
                 .frame(height: 1)
         }
     }
