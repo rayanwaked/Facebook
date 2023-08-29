@@ -23,13 +23,13 @@ struct HomeView: View {
                 .padding(.top, 5)
             
             Divider()
-                .padding(.bottom, 2)
+                .padding(.bottom, 1)
             
             //MARK: Tabs
             StoriesView(model: ProfileButtonModel(width: 40, height: 40, story: false))
             
             Divider()
-                .padding(.top, -2)
+                .padding(.top, -1)
                 .padding(.bottom, 2)
             
             //MARK: Stories
@@ -43,6 +43,7 @@ struct HomeView: View {
                 switch tabsModel.currentTab {
                 case 0: PostsView()
                 case 1: ReelsView()
+                        .padding([.leading, .trailing], -borderPadding)
                 case 2: VideosView()
                 default: PostsView()
                 }

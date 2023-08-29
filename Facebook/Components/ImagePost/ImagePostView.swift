@@ -19,6 +19,7 @@ struct ImagePostView: View {
                     Text(model.name)
                         .font(.body)
                         .fontWeight(.bold)
+                        .padding(.bottom, -6)
                     Text(model.date)
                         .font(.subheadline)
                         .foregroundStyle(.gray)
@@ -33,8 +34,7 @@ struct ImagePostView: View {
             
             //MARK: Post Content
             Text(model.caption)
-                .lineSpacing(1)
-                .font(.body)
+                .font(.callout)
             
             Image(model.image)
                 .resizable()

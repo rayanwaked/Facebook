@@ -19,6 +19,7 @@ struct VideoPostView: View {
                     Text(model.name)
                         .font(.body)
                         .fontWeight(.bold)
+                        .padding(.bottom, -6)
                     Text(model.date)
                         .font(.subheadline)
                         .foregroundStyle(.gray)
@@ -39,8 +40,7 @@ struct VideoPostView: View {
                 .padding([.leading, .trailing], -borderPadding)
             
             Text(model.caption)
-                .lineSpacing(1)
-                .font(.body)
+                .font(.callout)
             
             //MARK: Post Interactions
             ReactionGroupView()

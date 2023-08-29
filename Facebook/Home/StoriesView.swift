@@ -18,7 +18,7 @@ struct StoriesView: View {
                         ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55, story: false))
                             AddIndicatorView()
                     }
-                    .padding(.bottom, -4)
+                    .padding(.bottom, -5)
                     Text("You")
                         .foregroundStyle(.gray)
                         .font(Font.subheadline)
@@ -27,7 +27,7 @@ struct StoriesView: View {
                     ZStack(alignment: .bottomTrailing) {
                         ProfileButtonView(model: ProfileButtonModel(width: 55, height: 55, story: true))
                     }
-                    .padding(.bottom, -4)
+                    .padding(.bottom, -5)
                     Text("First")
                         .foregroundStyle(.gray)
                         .font(Font.subheadline)
