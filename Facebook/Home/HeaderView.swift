@@ -12,7 +12,7 @@ struct HeaderView: View {
         VStack {
             HStack {
                 ActionBarView() {
-                    print("Hey")
+                    print(" ")
                 }
             }
         }
